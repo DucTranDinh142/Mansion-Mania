@@ -6,8 +6,10 @@ public class Player : MonoBehaviour
     private Rigidbody2D playerRigid;
     private Animator playerAnimator;
 
-    public Collider2D[] colliders;
     [Header("Attack details")]
+    [SerializeField] private float attackRadius;
+    [SerializeField] private Transform attackPoint;
+    [SerializeField] private LayerMask whatIsEnemy;
 
     [Header("Movement details")]
     [SerializeField] private float moveSpeed = 3.5f;
@@ -39,6 +41,14 @@ public class Player : MonoBehaviour
         HandleFlip();
     }
 
+    public void DamageEnemies()
+    {
+        Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsEnemy);
+        foreach (Collider2D enemy in enemyColliders)
+        {
+            enemy.GetComponent<Enemy>().TakeDamage();
+        }
+    }
     public void EnableMovements(bool enable)
     {
         canMove = enable;
@@ -100,5 +110,7 @@ public class Player : MonoBehaviour
     {
         Gizmos.color = Color.green;
         Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundCheckDistance));
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
     }
 }

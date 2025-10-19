@@ -7,6 +7,7 @@ public class PlayerAnimationEvents : MonoBehaviour
     {
         player = GetComponentInParent<Player>();
     }
+    public void DamageEnemies() => player.DamageEnemies();
     private void DisableMovements() => player.EnableMovements(false);
     private void EnableMovements() => player.EnableMovements(true);
 
