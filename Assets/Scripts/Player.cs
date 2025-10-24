@@ -1,116 +1,93 @@
-﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    private Rigidbody2D playerRigid;
-    private Animator playerAnimator;
+    public Animator animator {  get; private set; }
+    public Rigidbody2D playerRigidbody {  get; private set; }
+    public PlayerInputSet input { get; private set; }
 
-    [Header("Attack details")]
-    [SerializeField] private float attackRadius;
-    [SerializeField] private Transform attackPoint;
-    [SerializeField] private LayerMask whatIsEnemy;
 
-    [Header("Movement details")]
-    [SerializeField] private float moveSpeed = 3.5f;
-    [SerializeField] private float jumpForce = 8;
-    private float xInput;
+    private StateMachine stateMachine;
+    public Player_IdleState idleState { get; private set; }
+    public Player_MoveState moveState { get; private set; }
+    public Player_JumpState jumpState { get; private set; }
+    public Player_FallState fallState { get; private set; }
+
+
+    [Header("Movement Stats")]
+    public float moveSpeed;
+    [Range(0f, 1f)]
+    public float moveInJumpSpeedMultiplier;
+    public float jumpForce;
+    public Vector2 moveInput { get; private set; }
+
     private bool facingRight = true;
-    private int facingRightValue = 1;
-    private bool canMove = true;
-    private bool canJump = true;
+    //private float facingrightvalue = 1f;
 
-    [Header("Collision details")]
+    [Header("Collision detection")]
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private LayerMask whatIsGround;
-    private bool isGrounded;
-
+    public bool groundDetected { get; private set; }
 
     private void Awake()
     {
-        playerRigid = GetComponent<Rigidbody2D>();
-        playerAnimator = GetComponentInChildren<Animator>();
-    }
+        animator = GetComponentInChildren<Animator>();
+        playerRigidbody = GetComponent<Rigidbody2D>();
+        
+        stateMachine = new StateMachine();
+        input = new PlayerInputSet();
 
+        idleState = new Player_IdleState(stateMachine,"Idle", this);
+        moveState = new Player_MoveState(stateMachine,"Move", this);
+        jumpState = new Player_JumpState(stateMachine, "Jump/Fall", this);
+        fallState = new Player_FallState(stateMachine, "Jump/Fall", this);
+    }
+    private void OnEnable()
+    {
+        input.Enable();
+        //input.Player.Movement.started
+        input.Player.Movement.performed += context => moveInput = context.ReadValue<Vector2>();
+        input.Player.Movement.canceled += context => moveInput = Vector2.zero;
+    }
+    private void OnDisable()
+    {
+        input.Disable();
+    }
+    private void Start()
+    {
+        stateMachine.Initialize(idleState);
+    }
     private void Update()
     {
-        HandleCollision();
-        HandleInput();
-        HandleMovement();
-        HandleAnimations();
-        HandleFlip();
+        HandleCollisionDetection();
+        stateMachine.UpdateActiveState();
     }
 
-    public void DamageEnemies()
+    public void SetVelocity(float xVelocity, float yVelocity)
     {
-        Collider2D[] enemyColliders = Physics2D.OverlapCircleAll(attackPoint.position, attackRadius, whatIsEnemy);
-        foreach (Collider2D enemy in enemyColliders)
-        {
-            enemy.GetComponent<Enemy>().TakeDamage();
-        }
-    }
-    public void EnableMovements(bool enable)
-    {
-        canMove = enable;
-        canJump = enable;
+        playerRigidbody.linearVelocity = new Vector2(xVelocity, yVelocity);
+        HandleFlip(xVelocity);
     }
 
-    private void HandleAnimations()
+    private void HandleFlip(float xVelocity)
     {
-        playerAnimator.SetFloat("xVelocity", playerRigid.linearVelocity.x);
-        playerAnimator.SetFloat("yVelocity", playerRigid.linearVelocity.y);
-        playerAnimator.SetBool("IsGrounded", isGrounded);
-    }
-
-    private void HandleInput()
-    {
-        xInput = Input.GetAxisRaw("Horizontal");
-        if (Input.GetKeyDown(KeyCode.W))
-            TryToJump();
-        if (Input.GetKeyDown(KeyCode.Mouse0))
-            TryToAttack();
-    }
-    private void TryToAttack()
-    {
-        if (isGrounded)
-            playerAnimator.SetTrigger("Attack!");
-    }
-
-    private void HandleMovement()
-    {
-        if (canMove)
-            playerRigid.linearVelocity = new Vector2(xInput * moveSpeed, playerRigid.linearVelocity.y);
-        else
-            playerRigid.linearVelocity = new Vector2(0, playerRigid.linearVelocity.y);
-    }
-
-    private void TryToJump()
-    {
-        if (isGrounded && canJump)
-            playerRigid.linearVelocity = new Vector2(playerRigid.linearVelocity.x, jumpForce);
-    }
-    private void HandleFlip()
-    {
-        if (playerRigid.linearVelocity.x > 0 && facingRight == false)
+        if (xVelocity < 0 && facingRight == true)
             Flip();
-        else if (playerRigid.linearVelocity.x < 0 && facingRight == true)
+        else if (xVelocity > 0 && facingRight != true)
             Flip();
     }
     private void Flip()
     {
         transform.Rotate(0, 180, 0);
         facingRight = !facingRight;
-        facingRightValue *= -1;
     }
-    private void HandleCollision()
+
+    private void HandleCollisionDetection()
     {
-        isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, whatIsGround);
+        groundDetected = Physics2D.Raycast(transform.position,Vector2.down,groundCheckDistance,whatIsGround);
     }
     private void OnDrawGizmos()
     {
-        Gizmos.color = Color.green;
-        Gizmos.DrawLine(transform.position, transform.position + new Vector3(0, -groundCheckDistance));
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(attackPoint.position, attackRadius);
+        Gizmos.DrawLine(transform.position, transform.position - new Vector3(0, groundCheckDistance));
     }
 }
