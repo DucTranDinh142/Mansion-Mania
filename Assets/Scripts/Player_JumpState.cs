@@ -14,7 +14,7 @@ public class Player_JumpState : Player_AiredState
     public override void Update()
     {
         base.Update();
-        if (playerRigidbody.linearVelocity.y < 0)
+        if (playerRigidbody.linearVelocity.y < 0 && stateMachine.currentState != player.jumpAttackState)
             stateMachine.ChangeState(player.fallState);
     }
 }

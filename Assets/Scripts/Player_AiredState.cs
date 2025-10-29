@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class Player_AiredState : EntityState
 {
     public Player_AiredState(StateMachine stateMachine, string animatorBoolName, Player player) : base(stateMachine, animatorBoolName, player)
@@ -9,6 +7,13 @@ public class Player_AiredState : EntityState
     public override void Update()
     {
         base.Update();
-        player.SetVelocity(player.moveInput.x * (player.moveInJumpSpeedMultiplier * player.moveSpeed), playerRigidbody.linearVelocity.y);
+        if (player.moveInput.x != 0)
+            player.SetVelocity(player.moveInput.x * (player.moveInAirSpeedMultiplier * player.moveSpeed), playerRigidbody.linearVelocity.y);
+
+        if (player.wallDetected)
+            stateMachine.ChangeState(player.wallSlideState);
+
+        if (input.Player.Attack.WasPressedThisFrame())
+            stateMachine.ChangeState(player.jumpAttackState);
     }
 }

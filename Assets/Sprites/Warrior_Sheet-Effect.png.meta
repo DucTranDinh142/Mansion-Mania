@@ -624,8 +624,8 @@ TextureImporter:
       name: Warrior_Sheet-Effect_8
       rect:
         serializedVersion: 2
-        x: 138
-        y: 660
+        x: 137
+        y: 661
         width: 69
         height: 44
       alignment: 0
@@ -1196,7 +1196,7 @@ TextureImporter:
       name: Warrior_Sheet-Effect_34
       rect:
         serializedVersion: 2
-        x: 276
+        x: 275
         y: 484
         width: 69
         height: 44
@@ -1461,7 +1461,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 276
-        y: 396
+        y: 397
         width: 69
         height: 44
       alignment: 9
@@ -1772,8 +1772,8 @@ TextureImporter:
         y: 264
         width: 69
         height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.475, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1794,8 +1794,8 @@ TextureImporter:
         y: 264
         width: 69
         height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.475, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1816,8 +1816,8 @@ TextureImporter:
         y: 264
         width: 69
         height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.475, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
