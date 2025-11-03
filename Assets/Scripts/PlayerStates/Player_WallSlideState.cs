@@ -1,5 +1,3 @@
-using UnityEngine;
-
 public class Player_WallSlideState : EntityState
 {
     public Player_WallSlideState(StateMachine stateMachine, string animatorBoolName, Player player) : base(stateMachine, animatorBoolName, player)
@@ -12,8 +10,8 @@ public class Player_WallSlideState : EntityState
         HandleWallSlide();
         if (input.Player.Dash.WasPressedThisFrame())
         {
-            player.Flip();
             stateMachine.ChangeState(player.dashState);
+            HandleFlip();
         }
         if (input.Player.Jump.WasPressedThisFrame())
             stateMachine.ChangeState(player.wallJumpState);
@@ -22,8 +20,14 @@ public class Player_WallSlideState : EntityState
         if (player.groundDetected)
         {
             stateMachine.ChangeState(player.idleState);
-            player.Flip();
+            HandleFlip();
         }
+    }
+
+    private void HandleFlip()
+    {
+        if (player.facingDirectionValue != player.moveInput.x)
+            player.Flip();
     }
 
     private void HandleWallSlide()
@@ -31,7 +35,7 @@ public class Player_WallSlideState : EntityState
         if (player.moveInput.y < 0)
             player.SetVelocity(player.moveInput.x, playerRigidbody.linearVelocity.y);
         else
-            player.SetVelocity(player.moveInput.x, playerRigidbody.linearVelocity.y*player.wallSlideSpeedMultiplier);
+            player.SetVelocity(player.moveInput.x, playerRigidbody.linearVelocity.y * player.wallSlideSpeedMultiplier);
     }
 
 }
