@@ -1,0 +1,328 @@
+fileFormatVersion: 2
+guid: 72bd9b96e877310449200c1b1ca79527
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8785006550187179717
+    second: Skeleton-Swordman-Move-export_0
+  - first:
+      213: -7409059810750004345
+    second: Skeleton-Swordman-Move-export_1
+  - first:
+      213: 6430655891391408847
+    second: Skeleton-Swordman-Move-export_2
+  - first:
+      213: 5947394976643645720
+    second: Skeleton-Swordman-Move-export_3
+  - first:
+      213: -9038411727732388441
+    second: Skeleton-Swordman-Move-export_4
+  - first:
+      213: 8686180108351400639
+    second: Skeleton-Swordman-Move-export_5
+  - first:
+      213: -3364985197477457475
+    second: Skeleton-Swordman-Move-export_6
+  - first:
+      213: 1154323545737717863
+    second: Skeleton-Swordman-Move-export_7
+  - first:
+      213: 4829296978983675042
+    second: Skeleton-Swordman-Move-export_8
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Skeleton-Swordman-Move_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 0
+        width: 41
+        height: 39
+      alignment: 9
+      pivot: {x: 0.3902439, y: 0.17948718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee125049b26ce94d89435038651f153
+      internalID: 2021555289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton-Swordman-Move_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 39
+        height: 39
+      alignment: 9
+      pivot: {x: 0.35897437, y: 0.20512821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e29dc4ba32087e4e8325d02a38d6ee2
+      internalID: -1721772724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton-Swordman-Move_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 0
+        width: 28
+        height: 39
+      alignment: 9
+      pivot: {x: 0.2857143, y: 0.20512821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 110e8ca32cf9d9c4aa8abbf2913685cd
+      internalID: 765323388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton-Swordman-Move_3
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 0
+        width: 28
+        height: 39
+      alignment: 9
+      pivot: {x: 0.32142857, y: 0.20512821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faf04597519d57f459b5b6268e6ad253
+      internalID: -565146361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton-Swordman-Move_4
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 32
+        height: 39
+      alignment: 9
+      pivot: {x: 0.40625, y: 0.17948718}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6fadb3b587d9947bd326a426e6567a
+      internalID: -3722278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton-Swordman-Move_5
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 0
+        width: 31
+        height: 39
+      alignment: 9
+      pivot: {x: 0.38709676, y: 0.20512821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28623329d75be954180747faa35c1a0d
+      internalID: -874998456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton-Swordman-Move_6
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 0
+        width: 27
+        height: 39
+      alignment: 9
+      pivot: {x: 0.3703704, y: 0.20512821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e013b6dd2ec81b46920cd58c9e4ea77
+      internalID: 174672865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton-Swordman-Move_7
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 0
+        width: 27
+        height: 39
+      alignment: 9
+      pivot: {x: 0.2962963, y: 0.20512821}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72aee7d035a6b00449981a892eacae40
+      internalID: 1127213582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8737aec91a1b34346933c3390893cd4e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Skeleton-Swordman-Move_0: 2021555289
+      Skeleton-Swordman-Move_1: -1721772724
+      Skeleton-Swordman-Move_2: 765323388
+      Skeleton-Swordman-Move_3: -565146361
+      Skeleton-Swordman-Move_4: -3722278
+      Skeleton-Swordman-Move_5: -874998456
+      Skeleton-Swordman-Move_6: 174672865
+      Skeleton-Swordman-Move_7: 1127213582
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
