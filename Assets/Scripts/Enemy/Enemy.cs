@@ -2,12 +2,17 @@ using UnityEngine;
 
 public class Enemy : Entity
 {
+
     public Enemy_IdleState idleState;
     public Enemy_MoveState moveState;
     public Enemy_AttackState attackState;
     public Enemy_BattleState battleState;
+    public Enemy_SurprisedState surprisedState;
+    public Enemy_DeadState deadState;
+    public Enemy_StunnedState stunnedState;
 
     [Header("Battle Phase Stats")]
+    public float surprisedTimer;
     public float battleMoveSpeed;
     public float attackDistance;
     [Range(0f, 3f)]
@@ -15,6 +20,11 @@ public class Enemy : Entity
     public float battleTimeDuration;
     public float minRetreatDistance;
     public Vector2 retreatVelocity;
+
+    [Header("Got Stunned Detail")]
+    public float stunnedDuration;
+    public Vector2 stunnedVelocity;
+    [SerializeField] protected bool canBeStunned;
 
     [Header("Movement Stats")]
     public float idleTime;
@@ -26,7 +36,34 @@ public class Enemy : Entity
     [SerializeField] private LayerMask whatIsPlayer;
     [SerializeField] private Transform playerCheckTransform;
     [SerializeField] private float playerCheckDistance;
+    public Transform player { get; private set; }
 
+    public void EnableCounterWindow(bool enable) => canBeStunned = enable; 
+    public override void EntityDeath()
+    {
+        base.EntityDeath();
+        stateMachine.ChangeState(deadState);
+    }
+
+    public void HandlePlayerDeath()
+    {
+        stateMachine.ChangeState(idleState);
+    }
+    public void TryEnterBattleState(Transform player)
+    {
+        if (stateMachine.currentState == battleState || stateMachine.currentState == attackState) return;
+
+        this.player = player;
+        stateMachine.ChangeState(battleState);
+    }
+
+    public Transform GetPlayerReference()
+    {
+        if (player == null)
+            player = PlayerDetected().transform;
+
+        return player;
+    }
 
     public RaycastHit2D PlayerDetected()
     {
@@ -50,5 +87,13 @@ public class Enemy : Entity
         Gizmos.DrawLine(playerCheckTransform.position, new Vector3(playerCheckTransform.position.x + (facingDirectionValue * minRetreatDistance), playerCheckTransform.position.y));
 
 
+    }
+    private void OnEnable()
+    {
+        Player.OnPlayerDeath += HandlePlayerDeath;
+    }
+    private void OnDisable()
+    {
+        Player.OnPlayerDeath -= HandlePlayerDeath;
     }
 }
