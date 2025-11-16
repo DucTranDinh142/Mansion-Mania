@@ -136,6 +136,51 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""ToggleSkillTreeUI"",
+                    ""type"": ""Button"",
+                    ""id"": ""dc4a2562-7708-42d0-a973-37a3f91209fe"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Spell"",
+                    ""type"": ""Button"",
+                    ""id"": ""ae7a5297-5664-4a10-a588-9e0517cba616"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""RangeAttack"",
+                    ""type"": ""Button"",
+                    ""id"": ""820f85ae-4bd4-4bf9-824b-5ba8e99b23e2"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Mouse"",
+                    ""type"": ""Value"",
+                    ""id"": ""17808690-f3e1-47a3-9c6b-97a3cddc1fd6"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Ultimate"",
+                    ""type"": ""Button"",
+                    ""id"": ""4ba5fdc4-2b8e-462e-b7b9-6f39c997fbe1"",
+                    ""expectedControlType"": """",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -251,6 +296,17 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""03c67a5f-4fbf-40f8-97a0-e1685c1a249a"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""313adc2f-177b-4183-be68-49a59d680966"",
                     ""path"": ""<Keyboard>/k"",
                     ""interactions"": """",
@@ -273,6 +329,17 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""219f94af-84c8-4ebd-a5ae-d9902fff254c"",
+                    ""path"": ""<Keyboard>/leftShift"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""Dash"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""e1fc6387-dd63-49c8-ad8d-13c1ad87d38a"",
                     ""path"": ""<Keyboard>/j"",
                     ""interactions"": """",
@@ -284,12 +351,144 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
                 },
                 {
                     ""name"": """",
+                    ""id"": ""e7e0254e-b11c-4d96-844a-4c0fac3beee4"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""Attack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
                     ""id"": ""49549ced-ddb4-4284-9d4b-61050150980e"",
+                    ""path"": ""<Keyboard>/p"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""Counter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ba3f2a63-78e6-4894-88b1-5f345b6d998e"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""Counter"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""64283c25-3de9-45c2-9c6e-1570b85a6343"",
+                    ""path"": ""<Keyboard>/tab"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""ToggleSkillTreeUI"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e7afd33c-5826-4d68-8762-073b40e4d7a4"",
+                    ""path"": ""<Keyboard>/i"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""Spell"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2534b80a-8577-4363-b119-312cf844dd4c"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""Spell"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""a7a7e02a-865f-4729-8337-fb793c66c51e"",
+                    ""path"": ""<Mouse>/forwardButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""Spell"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""2bea4971-f7e6-4440-8679-f720c3872118"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""RangeAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""fd1d0b76-df4b-4373-a8f7-0759aebc1338"",
+                    ""path"": ""<Keyboard>/u"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""RangeAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ce30d932-ff60-4685-8bb5-91cef89a169f"",
+                    ""path"": ""<Mouse>/backButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": "";Keyboard & Mouse"",
+                    ""action"": ""RangeAttack"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""e43b00a8-83f1-4bb8-be8c-625e6a90750e"",
+                    ""path"": ""<Mouse>/position"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Mouse"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""4c2c119e-321a-43f2-ad66-46f9bc835e19"",
                     ""path"": ""<Keyboard>/o"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Counter"",
+                    ""action"": ""Ultimate"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""62fd53ea-5c7e-4f85-b1d8-64763b26c19f"",
+                    ""path"": ""<Keyboard>/r"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Ultimate"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -322,6 +521,11 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
         m_Player_Dash = m_Player.FindAction("Dash", throwIfNotFound: true);
         m_Player_Attack = m_Player.FindAction("Attack", throwIfNotFound: true);
         m_Player_Counter = m_Player.FindAction("Counter", throwIfNotFound: true);
+        m_Player_ToggleSkillTreeUI = m_Player.FindAction("ToggleSkillTreeUI", throwIfNotFound: true);
+        m_Player_Spell = m_Player.FindAction("Spell", throwIfNotFound: true);
+        m_Player_RangeAttack = m_Player.FindAction("RangeAttack", throwIfNotFound: true);
+        m_Player_Mouse = m_Player.FindAction("Mouse", throwIfNotFound: true);
+        m_Player_Ultimate = m_Player.FindAction("Ultimate", throwIfNotFound: true);
     }
 
     ~@PlayerInputSet()
@@ -407,6 +611,11 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
     private readonly InputAction m_Player_Dash;
     private readonly InputAction m_Player_Attack;
     private readonly InputAction m_Player_Counter;
+    private readonly InputAction m_Player_ToggleSkillTreeUI;
+    private readonly InputAction m_Player_Spell;
+    private readonly InputAction m_Player_RangeAttack;
+    private readonly InputAction m_Player_Mouse;
+    private readonly InputAction m_Player_Ultimate;
     /// <summary>
     /// Provides access to input actions defined in input action map "Player".
     /// </summary>
@@ -438,6 +647,26 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
         /// Provides access to the underlying input action "Player/Counter".
         /// </summary>
         public InputAction @Counter => m_Wrapper.m_Player_Counter;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/ToggleSkillTreeUI".
+        /// </summary>
+        public InputAction @ToggleSkillTreeUI => m_Wrapper.m_Player_ToggleSkillTreeUI;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Spell".
+        /// </summary>
+        public InputAction @Spell => m_Wrapper.m_Player_Spell;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/RangeAttack".
+        /// </summary>
+        public InputAction @RangeAttack => m_Wrapper.m_Player_RangeAttack;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Mouse".
+        /// </summary>
+        public InputAction @Mouse => m_Wrapper.m_Player_Mouse;
+        /// <summary>
+        /// Provides access to the underlying input action "Player/Ultimate".
+        /// </summary>
+        public InputAction @Ultimate => m_Wrapper.m_Player_Ultimate;
         /// <summary>
         /// Provides access to the underlying input action map instance.
         /// </summary>
@@ -479,6 +708,21 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
             @Counter.started += instance.OnCounter;
             @Counter.performed += instance.OnCounter;
             @Counter.canceled += instance.OnCounter;
+            @ToggleSkillTreeUI.started += instance.OnToggleSkillTreeUI;
+            @ToggleSkillTreeUI.performed += instance.OnToggleSkillTreeUI;
+            @ToggleSkillTreeUI.canceled += instance.OnToggleSkillTreeUI;
+            @Spell.started += instance.OnSpell;
+            @Spell.performed += instance.OnSpell;
+            @Spell.canceled += instance.OnSpell;
+            @RangeAttack.started += instance.OnRangeAttack;
+            @RangeAttack.performed += instance.OnRangeAttack;
+            @RangeAttack.canceled += instance.OnRangeAttack;
+            @Mouse.started += instance.OnMouse;
+            @Mouse.performed += instance.OnMouse;
+            @Mouse.canceled += instance.OnMouse;
+            @Ultimate.started += instance.OnUltimate;
+            @Ultimate.performed += instance.OnUltimate;
+            @Ultimate.canceled += instance.OnUltimate;
         }
 
         /// <summary>
@@ -505,6 +749,21 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
             @Counter.started -= instance.OnCounter;
             @Counter.performed -= instance.OnCounter;
             @Counter.canceled -= instance.OnCounter;
+            @ToggleSkillTreeUI.started -= instance.OnToggleSkillTreeUI;
+            @ToggleSkillTreeUI.performed -= instance.OnToggleSkillTreeUI;
+            @ToggleSkillTreeUI.canceled -= instance.OnToggleSkillTreeUI;
+            @Spell.started -= instance.OnSpell;
+            @Spell.performed -= instance.OnSpell;
+            @Spell.canceled -= instance.OnSpell;
+            @RangeAttack.started -= instance.OnRangeAttack;
+            @RangeAttack.performed -= instance.OnRangeAttack;
+            @RangeAttack.canceled -= instance.OnRangeAttack;
+            @Mouse.started -= instance.OnMouse;
+            @Mouse.performed -= instance.OnMouse;
+            @Mouse.canceled -= instance.OnMouse;
+            @Ultimate.started -= instance.OnUltimate;
+            @Ultimate.performed -= instance.OnUltimate;
+            @Ultimate.canceled -= instance.OnUltimate;
         }
 
         /// <summary>
@@ -593,5 +852,40 @@ public partial class @PlayerInputSet: IInputActionCollection2, IDisposable
         /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
         /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
         void OnCounter(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "ToggleSkillTreeUI" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnToggleSkillTreeUI(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Spell" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnSpell(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "RangeAttack" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnRangeAttack(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Mouse" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnMouse(InputAction.CallbackContext context);
+        /// <summary>
+        /// Method invoked when associated input action "Ultimate" is either <see cref="UnityEngine.InputSystem.InputAction.started" />, <see cref="UnityEngine.InputSystem.InputAction.performed" /> or <see cref="UnityEngine.InputSystem.InputAction.canceled" />.
+        /// </summary>
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.started" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.performed" />
+        /// <seealso cref="UnityEngine.InputSystem.InputAction.canceled" />
+        void OnUltimate(InputAction.CallbackContext context);
     }
 }

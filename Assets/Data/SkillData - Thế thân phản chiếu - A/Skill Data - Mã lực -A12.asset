@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca4733083c6c2849ad6b5de626b2bed, type: 3}
+  m_Name: "Skill Data - M\xE3 l\u1EF1c -A12"
+  m_EditorClassIdentifier: 
+  skillName: "M\xE3 l\u1EF1c "
+  description: "Linh h\u1ED3n gi\xFAp gi\u1EA3m 1 gi\xE2y th\u1EDDi gian h\u1ED3i
+    chi\xEAu cho c\xE1c k\u1EF9 n\u0103ng kh\xE1c.\n\n(Ti\u1EBFn l\xEAn! Ti\u1EBFn
+    l\xEAn, c\xE1c m\xE3 n\u01B0\u01A1ng!)"
+  icon: {fileID: -1311777646, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  cost: 20
+  unlockByDefault: 0
+  skillType: 0
+  upgradeData:
+    upgradeType: 18
+    cooldown: 4
+    scaleData:
+      physical: 0
+      elemental: 0
+      chillDuration: 3
+      chillSlowMultiplier: 0.2
+      burnDuration: 5
+      burnDamageScale: 0.6
+      burnTickPerSec: 2
+      shockDuration: 3
+      shockDamageScale: 1
+      shockCharge: 0.35

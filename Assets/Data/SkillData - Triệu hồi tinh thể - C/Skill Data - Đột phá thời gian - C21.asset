@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca4733083c6c2849ad6b5de626b2bed, type: 3}
+  m_Name: "Skill Data - \u0110\u1ED9t ph\xE1 th\u1EDDi gian - C21"
+  m_EditorClassIdentifier: 
+  skillName: "\u0110\u1ED9t ph\xE1 th\u1EDDi gian"
+  description: "Khi th\u1EF1c hi\u1EC7n \u0111\u1ED5i ch\u1ED7 v\u1EDBi ng\xF4i sao,
+    m\xE1u c\u1EE7a b\u1EA1n s\u1EBD \u0111\u01B0\u1EE3c tr\u1EA3 v\u1EC1 b\u1EB1ng
+    v\u1EDBi th\u1EDDi \u0111i\u1EC3m tri\u1EC7u h\u1ED3i ng\xF4i sao.\n\n(\u0110\u01B0\u1EE3c
+    r\u1ED3i, l\xE0m l\u1EA1i n\xE0o.)"
+  icon: {fileID: 1835814619, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  cost: 20
+  unlockByDefault: 0
+  skillType: 2
+  upgradeData:
+    upgradeType: 10
+    cooldown: 10
+    scaleData:
+      physical: 0
+      elemental: 2
+      chillDuration: 3
+      chillSlowMultiplier: 0.2
+      burnDuration: 5
+      burnDamageScale: 0.6
+      burnTickPerSec: 2
+      shockDuration: 3
+      shockDamageScale: 1
+      shockCharge: 0.35

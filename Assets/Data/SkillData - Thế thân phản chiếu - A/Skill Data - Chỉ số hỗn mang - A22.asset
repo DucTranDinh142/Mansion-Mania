@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca4733083c6c2849ad6b5de626b2bed, type: 3}
+  m_Name: "Skill Data - Ch\u1EC9 s\u1ED1 h\u1ED7n mang - A22"
+  m_EditorClassIdentifier: 
+  skillName: "Ch\u1EC9 s\u1ED1 h\u1ED7n mang"
+  description: "N\u1EBFu th\u1EBF th\xE2n c\u1EE7a b\u1EA1n \u0111\xE1nh tr\xFAng
+    k\u1EBB \u0111\u1ECBch, s\u1EBD c\xF3 x\xE1c su\u1EA5t 30% t\u1EA1o th\xEAm m\u1ED9t
+    th\u1EBF th\xE2n n\u1EEFa t\u1EA5n c\xF4ng k\u1EBB \u0111\u1ECBch.\nTh\u1EBF
+    th\xE2n m\u1EDBi c\u0169ng s\u1EDF h\u1EEFu kh\u1EA3 n\u0103ng tr\xEAn.\n\n(Tr\xEAn
+    l\xFD thuy\u1EBFt, k\u1EF9 n\u0103ng n\xE0y c\xF3 th\u1EC3 l\xE0 m\u1ED9t chi\xEAu
+    t\u1EA5t s\xE1t \u0111\u01B0\u1EE3c c\u1EA3 tr\xF9m cu\u1ED1i. Trong tr\u01B0\u1EDDng
+    h\u1EE3p b\u1EA1n l\xE0 1% nh\u1EEFng m\u1EA1o hi\u1EC3m gi\u1EA3 \u0111\xE3
+    th\u1EAFng l\u1EDBn v\u1EDBi k\u1EF9 n\u0103ng n\xE0y, l\xE0m \u01A1n h\xE3y
+    ra ngo\xE0i ch\u1EA1m c\u1ECF \u0111i.)"
+  icon: {fileID: -535307527, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  cost: 20
+  unlockByDefault: 0
+  skillType: 0
+  upgradeData:
+    upgradeType: 21
+    cooldown: 6
+    scaleData:
+      physical: 1.75
+      elemental: 0.2
+      chillDuration: 3
+      chillSlowMultiplier: 0.2
+      burnDuration: 5
+      burnDamageScale: 0.6
+      burnTickPerSec: 2
+      shockDuration: 3
+      shockDamageScale: 1
+      shockCharge: 0.35

@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: 716705df8a4ba4f41a4d4d6f44371ee8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3074846618580964343
+    second: EnergyPhantom_Move_0
+  - first:
+      213: 9218504497877343232
+    second: EnergyPhantom_Move_1
+  - first:
+      213: 2514330082067774698
+    second: EnergyPhantom_Move_2
+  - first:
+      213: -4312795191375671749
+    second: EnergyPhantom_Move_3
+  - first:
+      213: -2067918553020865464
+    second: EnergyPhantom_Move_4
+  - first:
+      213: -859600214702244594
+    second: EnergyPhantom_Move_5
+  - first:
+      213: 7005682847911003195
+    second: EnergyPhantom_Move_6
+  - first:
+      213: 4910817732336172932
+    second: EnergyPhantom_Move_7
+  - first:
+      213: 6554600148956683140
+    second: EnergyPhantom_Move_8
+  - first:
+      213: 7121463087879362835
+    second: EnergyPhantom_Move_9
+  - first:
+      213: 2356993305969321813
+    second: EnergyPhantom_Move_10
+  - first:
+      213: 8068542999192930779
+    second: EnergyPhantom_Move_11
+  - first:
+      213: 4348081435766902432
+    second: EnergyPhantom_Move_12
+  - first:
+      213: 6412002088123171791
+    second: EnergyPhantom_Move_13
+  - first:
+      213: -2022476862630140653
+    second: EnergyPhantom_Move_14
+  - first:
+      213: 9057728938096430087
+    second: EnergyPhantom_Move_15
+  - first:
+      213: -3928754251436643726
+    second: EnergyPhantom_Move_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 36
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnergyPhantom_Move_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1
+        width: 61
+        height: 58
+      alignment: 9
+      pivot: {x: 0.45901638, y: 0.05172414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f3545755bc0caa20800000000000000
+      internalID: 3074846618580964343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Move_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 61
+        height: 59
+      alignment: 9
+      pivot: {x: 0.4918033, y: 0.06779661}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aec7abd53e1b4e220800000000000000
+      internalID: 2514330082067774698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Move_2
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 0
+        width: 61
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5409836, y: 0.084745765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3e4a05af9fd524c0800000000000000
+      internalID: -4312795191375671749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Move_4
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 0
+        width: 61
+        height: 59
+      alignment: 9
+      pivot: {x: 0.59016395, y: 0.23728813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0db2d9b8261214f0800000000000000
+      internalID: -859600214702244594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Move_5
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 0
+        width: 61
+        height: 59
+      alignment: 9
+      pivot: {x: 0.59016395, y: 0.18644068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48f369c75bab62440800000000000000
+      internalID: 4910817732336172932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Move_6
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 0
+        width: 61
+        height: 59
+      alignment: 9
+      pivot: {x: 0.55737704, y: 0.20338982}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3191b1282f484d260800000000000000
+      internalID: 7121463087879362835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Move_7
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 0
+        width: 61
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5409836, y: 0.23728813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55766448ce8b5b020800000000000000
+      internalID: 2356993305969321813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Move_8
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 0
+        width: 61
+        height: 59
+      alignment: 9
+      pivot: {x: 0.52459013, y: 0.18644068}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ae4b59570d775c30800000000000000
+      internalID: 4348081435766902432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Move_9
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 0
+        width: 61
+        height: 59
+      alignment: 9
+      pivot: {x: 0.5409836, y: 0.15254237}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc305a94de10cf850800000000000000
+      internalID: 6412002088123171791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Move_3
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 0
+        width: 61
+        height: 59
+      alignment: 9
+      pivot: {x: 0.57377046, y: 0.084745765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27a2051e2d24a79c0800000000000000
+      internalID: -3928754251436643726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 04558f9075eb19f4d8232562747e0555
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EnergyPhantom_Move_0: 3074846618580964343
+      EnergyPhantom_Move_1: 2514330082067774698
+      EnergyPhantom_Move_2: -4312795191375671749
+      EnergyPhantom_Move_3: -3928754251436643726
+      EnergyPhantom_Move_4: -859600214702244594
+      EnergyPhantom_Move_5: 4910817732336172932
+      EnergyPhantom_Move_6: 7121463087879362835
+      EnergyPhantom_Move_7: 2356993305969321813
+      EnergyPhantom_Move_8: 4348081435766902432
+      EnergyPhantom_Move_9: 6412002088123171791
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

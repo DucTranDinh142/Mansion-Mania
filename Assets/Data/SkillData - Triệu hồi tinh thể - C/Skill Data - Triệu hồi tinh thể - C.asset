@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca4733083c6c2849ad6b5de626b2bed, type: 3}
+  m_Name: "Skill Data - Tri\u1EC7u h\u1ED3i tinh th\u1EC3 - C"
+  m_EditorClassIdentifier: 
+  skillName: "Tri\u1EC7u h\u1ED3i tinh th\u1EC3"
+  description: "Tri\u1EC7u h\u1ED3i m\u1ED9t tinh th\u1EC3 t\u1EA1i v\u1ECB tr\xED
+    c\u1EE7a b\u1EA1n, ph\xE1t n\u1ED5 sau 2 gi\xE2y v\xE0 g\xE2y s\xE1t th\u01B0\u01A1ng
+    l\xEAn t\u1EA5t c\u1EA3 k\u1EBB \u0111\u1ECBch trong v\xF9ng \u1EA3nh h\u01B0\u1EDFng.\n\n(H\xF3a
+    ra \u0111\u1ED9 c\u1EE9ng c\u1EE7a kim c\u01B0\u01A1ng kh\xF4ng t\u01B0\u01A1ng
+    \u0111\u01B0\u01A1ng v\u1EDBi \u0111\u1ED9 b\u1EC1n c\u1EE7a ch\xFAng.)"
+  icon: {fileID: -1056834691, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  cost: 10
+  unlockByDefault: 0
+  skillType: 2
+  upgradeData:
+    upgradeType: 6
+    cooldown: 5
+    scaleData:
+      physical: 0
+      elemental: 1
+      chillDuration: 3
+      chillSlowMultiplier: 0.2
+      burnDuration: 5
+      burnDamageScale: 0.6
+      burnTickPerSec: 2
+      shockDuration: 3
+      shockDamageScale: 1
+      shockCharge: 0.35

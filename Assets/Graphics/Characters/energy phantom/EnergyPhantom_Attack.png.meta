@@ -1,0 +1,823 @@
+fileFormatVersion: 2
+guid: 7d0667951fa1eeb45a972b3b72c6fc52
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1740971431441750239
+    second: EnergyPhantom_Attack_0
+  - first:
+      213: 8690640308224293246
+    second: EnergyPhantom_Attack_1
+  - first:
+      213: 6540134001405443853
+    second: EnergyPhantom_Attack_2
+  - first:
+      213: -5951977528080219243
+    second: EnergyPhantom_Attack_3
+  - first:
+      213: -8211053279006291636
+    second: EnergyPhantom_Attack_4
+  - first:
+      213: -204496003429436110
+    second: EnergyPhantom_Attack_5
+  - first:
+      213: 8355739453671287328
+    second: EnergyPhantom_Attack_6
+  - first:
+      213: -8981256196686830561
+    second: EnergyPhantom_Attack_7
+  - first:
+      213: 7904993865241272984
+    second: EnergyPhantom_Attack_8
+  - first:
+      213: 1996984225731500535
+    second: EnergyPhantom_Attack_9
+  - first:
+      213: -3898108814612592491
+    second: EnergyPhantom_Attack_10
+  - first:
+      213: -3822205026388870785
+    second: EnergyPhantom_Attack_11
+  - first:
+      213: -274072913604209447
+    second: EnergyPhantom_Attack_12
+  - first:
+      213: -6228536968263276397
+    second: EnergyPhantom_Attack_13
+  - first:
+      213: 8956621979484915198
+    second: EnergyPhantom_Attack_14
+  - first:
+      213: -9202071560515281086
+    second: EnergyPhantom_Attack_15
+  - first:
+      213: 4957323860150567414
+    second: EnergyPhantom_Attack_16
+  - first:
+      213: 3525005514306963967
+    second: EnergyPhantom_Attack_17
+  - first:
+      213: -2421563909713089671
+    second: EnergyPhantom_Attack_18
+  - first:
+      213: -5638299230672328769
+    second: EnergyPhantom_Attack_19
+  - first:
+      213: -2375294187983134583
+    second: EnergyPhantom_Attack_20
+  - first:
+      213: 8186781976724220232
+    second: EnergyPhantom_Attack_21
+  - first:
+      213: 7955684895881147153
+    second: EnergyPhantom_Attack_22
+  - first:
+      213: -4114364621536770532
+    second: EnergyPhantom_Attack_23
+  - first:
+      213: -6055791045100900774
+    second: EnergyPhantom_Attack_24
+  - first:
+      213: -5786320356035285480
+    second: EnergyPhantom_Attack_25
+  - first:
+      213: -5251123653182171166
+    second: EnergyPhantom_Attack_26
+  - first:
+      213: 7480891850683553887
+    second: EnergyPhantom_Attack_27
+  - first:
+      213: 9207150628123047720
+    second: EnergyPhantom_Attack_28
+  - first:
+      213: -3056636912709872662
+    second: EnergyPhantom_Attack_29
+  - first:
+      213: -4385288693006589773
+    second: EnergyPhantom_Attack_30
+  - first:
+      213: 7182733898534989946
+    second: EnergyPhantom_Attack_31
+  - first:
+      213: 1787023900744100655
+    second: EnergyPhantom_Attack_32
+  - first:
+      213: -6185571085585407670
+    second: EnergyPhantom_Attack_33
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 36
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 315
+        width: 36
+        height: 51
+      alignment: 9
+      pivot: {x: 0.3888889, y: 0.019607844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127afc805b3d6d7e0800000000000000
+      internalID: -1740971431441750239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 309
+        width: 36
+        height: 57
+      alignment: 9
+      pivot: {x: 0.3611111, y: 0.01754386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79766ab05b5b9870800000000000000
+      internalID: 8690640308224293246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 305
+        width: 83
+        height: 61
+      alignment: 9
+      pivot: {x: 0.28915662, y: 0.1967213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0fb931293933ca50800000000000000
+      internalID: 6540134001405443853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 303
+        width: 87
+        height: 63
+      alignment: 9
+      pivot: {x: 0.29885057, y: 0.19047621}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c490609fb8a7c0e80800000000000000
+      internalID: -8211053279006291636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 317
+        width: 52
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5192308, y: 0.020408163}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02a2bc333cc85f370800000000000000
+      internalID: 8355739453671287328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 250
+        width: 48
+        height: 38
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.02631579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f14a4b7e21b2c5380800000000000000
+      internalID: -8981256196686830561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 252
+        width: 43
+        height: 36
+      alignment: 9
+      pivot: {x: 0.37209302, y: 0.027777778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8922959b90e24bd60800000000000000
+      internalID: 7904993865241272984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 232
+        width: 83
+        height: 56
+      alignment: 9
+      pivot: {x: 0.33734939, y: 0.053571433}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f9d8c4a296b6bb10800000000000000
+      internalID: 1996984225731500535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 228
+        width: 84
+        height: 60
+      alignment: 9
+      pivot: {x: 0.3452381, y: 0.116666675}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5988239afa227e9c0800000000000000
+      internalID: -3898108814612592491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 234
+        width: 63
+        height: 54
+      alignment: 9
+      pivot: {x: 0.42857146, y: 0.018518519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f79f06787ccc4fac0800000000000000
+      internalID: -3822205026388870785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 155
+        width: 49
+        height: 58
+      alignment: 9
+      pivot: {x: 0.30612245, y: 0.01724138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3986748a0aacf89a0800000000000000
+      internalID: -6228536968263276397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_14
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 159
+        width: 36
+        height: 54
+      alignment: 9
+      pivot: {x: 0.25, y: 0.018518519}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef587a27c305c4c70800000000000000
+      internalID: 8956621979484915198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_15
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 155
+        width: 77
+        height: 58
+      alignment: 9
+      pivot: {x: 0.18181819, y: 0.01724138}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f13cd9bacab4080800000000000000
+      internalID: -9202071560515281086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_16
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 164
+        width: 79
+        height: 49
+      alignment: 9
+      pivot: {x: 0.20253165, y: 0.06122449}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f1c7d829c3fbc440800000000000000
+      internalID: 4957323860150567414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_18
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 170
+        width: 49
+        height: 43
+      alignment: 9
+      pivot: {x: 0.34693876, y: 0.023255814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b25a04470e46ed0800000000000000
+      internalID: -2421563909713089671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_19
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 101
+        width: 47
+        height: 39
+      alignment: 9
+      pivot: {x: 0.46808508, y: 0.025641026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7ea6209bcb0c1b0800000000000000
+      internalID: -5638299230672328769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_22
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 85
+        width: 72
+        height: 55
+      alignment: 9
+      pivot: {x: 0.15277778, y: 0.018181818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113bfe30345486e60800000000000000
+      internalID: 7955684895881147153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_23
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 83
+        width: 73
+        height: 57
+      alignment: 9
+      pivot: {x: 0.15068492, y: 0.01754386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16cdd0fc27d6e6c0800000000000000
+      internalID: -4114364621536770532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_24
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 89
+        width: 44
+        height: 51
+      alignment: 9
+      pivot: {x: 0.3181818, y: 0.019607844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5ee4c2212285fba0800000000000000
+      internalID: -6055791045100900774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_25
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 89
+        width: 41
+        height: 51
+      alignment: 9
+      pivot: {x: 0.3414634, y: 0.019607844}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81ea7ed1b4cd2bfa0800000000000000
+      internalID: -5786320356035285480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_20
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 99
+        width: 44
+        height: 42
+      alignment: 9
+      pivot: {x: 0.25, y: 0.023809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e7dc6cebd24027b0800000000000000
+      internalID: -5251123653182171166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_26
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 18
+        width: 41
+        height: 50
+      alignment: 9
+      pivot: {x: 0.4390244, y: 0.02}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f589b13b08771d760800000000000000
+      internalID: 7480891850683553887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_27
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 23
+        width: 49
+        height: 45
+      alignment: 9
+      pivot: {x: 0.48979592, y: 0.022222223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827f9c6f6be56cf70800000000000000
+      internalID: 9207150628123047720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_29
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 7
+        width: 83
+        height: 61
+      alignment: 9
+      pivot: {x: 0.28915662, y: 0.1967213}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae3d4923ce4a495d0800000000000000
+      internalID: -3056636912709872662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 5
+        width: 86
+        height: 63
+      alignment: 9
+      pivot: {x: 0.29069766, y: 0.19047621}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70b55acc623ea360800000000000000
+      internalID: 7182733898534989946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EnergyPhantom_Attack_33
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 19
+        width: 51
+        height: 49
+      alignment: 9
+      pivot: {x: 0.50980395, y: 0.020408163}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4121c6cedf682aa0800000000000000
+      internalID: -6185571085585407670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: cfd29bdfdd2aacf4da998fd6bc98a476
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      EnergyPhantom_Attack_0: -1740971431441750239
+      EnergyPhantom_Attack_1: 8690640308224293246
+      EnergyPhantom_Attack_10: -3898108814612592491
+      EnergyPhantom_Attack_11: -3822205026388870785
+      EnergyPhantom_Attack_12: -274072913604209447
+      EnergyPhantom_Attack_13: -6228536968263276397
+      EnergyPhantom_Attack_14: 8956621979484915198
+      EnergyPhantom_Attack_15: -9202071560515281086
+      EnergyPhantom_Attack_16: 4957323860150567414
+      EnergyPhantom_Attack_17: 3525005514306963967
+      EnergyPhantom_Attack_18: -2421563909713089671
+      EnergyPhantom_Attack_19: -5638299230672328769
+      EnergyPhantom_Attack_2: 6540134001405443853
+      EnergyPhantom_Attack_20: -5251123653182171166
+      EnergyPhantom_Attack_21: 8186781976724220232
+      EnergyPhantom_Attack_22: 7955684895881147153
+      EnergyPhantom_Attack_23: -4114364621536770532
+      EnergyPhantom_Attack_24: -6055791045100900774
+      EnergyPhantom_Attack_25: -5786320356035285480
+      EnergyPhantom_Attack_26: 7480891850683553887
+      EnergyPhantom_Attack_27: 9207150628123047720
+      EnergyPhantom_Attack_29: -3056636912709872662
+      EnergyPhantom_Attack_30: -4385288693006589773
+      EnergyPhantom_Attack_31: 7182733898534989946
+      EnergyPhantom_Attack_32: 1787023900744100655
+      EnergyPhantom_Attack_33: -6185571085585407670
+      EnergyPhantom_Attack_4: -8211053279006291636
+      EnergyPhantom_Attack_5: -204496003429436110
+      EnergyPhantom_Attack_6: 8355739453671287328
+      EnergyPhantom_Attack_7: -8981256196686830561
+      EnergyPhantom_Attack_8: 7904993865241272984
+      EnergyPhantom_Attack_9: 1996984225731500535
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

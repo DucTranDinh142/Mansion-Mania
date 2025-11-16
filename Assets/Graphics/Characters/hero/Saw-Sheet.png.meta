@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 6402c3c2e2b158243bd2ea350a6aec61
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5824007234248034340
+    second: Saw-Sheet_0
+  - first:
+      213: -530559970349522268
+    second: Saw-Sheet_1
+  - first:
+      213: -5501225990469999093
+    second: Saw-Sheet_2
+  - first:
+      213: 2094638625292771036
+    second: Saw-Sheet_3
+  - first:
+      213: -3432518501582755396
+    second: Saw-Sheet_4
+  - first:
+      213: 8999191315851291634
+    second: Saw-Sheet_5
+  - first:
+      213: 2107604852478269368
+    second: Saw-Sheet_6
+  - first:
+      213: 773342897424852910
+    second: Saw-Sheet_7
+  - first:
+      213: -6216627395964895972
+    second: Saw-Sheet_8
+  - first:
+      213: -270373510822872226
+    second: Saw-Sheet_9
+  - first:
+      213: -2586756932539548852
+    second: Saw-Sheet_10
+  - first:
+      213: 3020911644435669823
+    second: Saw-Sheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 60
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Saw-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 56
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd737510748fc2fa0800000000000000
+      internalID: -5824007234248034340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 59
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a2664b948213a8f0800000000000000
+      internalID: -530559970349522268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 56
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b06a3e0cb18b7a3b0800000000000000
+      internalID: -5501225990469999093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 632
+        y: 59
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde53695bb6a11d10800000000000000
+      internalID: 2094638625292771036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 56
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9243ceb9e3d50d0800000000000000
+      internalID: -3432518501582755396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 59
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fba81f62dc83ec70800000000000000
+      internalID: 8999191315851291634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 56
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b75bde5277bf3d10800000000000000
+      internalID: 2107604852478269368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 59
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7649294477bba00800000000000000
+      internalID: 773342897424852910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 56
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1dfc8a025a1ab9a0800000000000000
+      internalID: -6216627395964895972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 1784
+        y: 56
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b3ab279b07f3cf0800000000000000
+      internalID: -270373510822872226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 1976
+        y: 56
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4b73bb664ef91cd0800000000000000
+      internalID: -2586756932539548852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Saw-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 56
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33ed68922f6ce920800000000000000
+      internalID: 3020911644435669823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Saw-Sheet_0: -5824007234248034340
+      Saw-Sheet_1: -530559970349522268
+      Saw-Sheet_10: -2586756932539548852
+      Saw-Sheet_11: 3020911644435669823
+      Saw-Sheet_2: -5501225990469999093
+      Saw-Sheet_3: 2094638625292771036
+      Saw-Sheet_4: -3432518501582755396
+      Saw-Sheet_5: 8999191315851291634
+      Saw-Sheet_6: 2107604852478269368
+      Saw-Sheet_7: 773342897424852910
+      Saw-Sheet_8: -6216627395964895972
+      Saw-Sheet_9: -270373510822872226
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

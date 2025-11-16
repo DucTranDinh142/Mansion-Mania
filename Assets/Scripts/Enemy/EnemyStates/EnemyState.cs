@@ -9,6 +9,7 @@ public class EnemyState : EntityState
 
         animator = enemy.entityAnimator;
         rigidbody = enemy.entityRigidbody2D;
+        stats = enemy.entityStats;
     }
     public override void Update()
     {

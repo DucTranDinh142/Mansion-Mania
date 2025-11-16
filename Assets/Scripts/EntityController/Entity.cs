@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using Unity.VisualScripting;
 using UnityEngine;
 
 
@@ -11,13 +10,14 @@ public class Entity : MonoBehaviour
 
     public Animator entityAnimator { get; private set; }
     public Rigidbody2D entityRigidbody2D { get; private set; }
+    public Entity_Stats entityStats { get; private set; }
     protected StateMachine stateMachine;
 
     private bool facingRight = true;
     public int facingDirectionValue { get; private set; } = 1;
 
     [Header("Collision detection")]
-    [SerializeField] protected LayerMask whatIsGround;
+    public LayerMask whatIsGround;
     [SerializeField] private float groundCheckDistance;
     [SerializeField] private float wallCheckDistance;
     [SerializeField] private Transform groundCheckTransform;
@@ -28,11 +28,13 @@ public class Entity : MonoBehaviour
 
     private bool isKnockbacked;
     private Coroutine knockbackCoroutine;
+    private Coroutine slowDownCoroutine;
 
     protected virtual void Awake()
     {
         entityAnimator = GetComponentInChildren<Animator>();
         entityRigidbody2D = GetComponent<Rigidbody2D>();
+        entityStats = GetComponent<Entity_Stats>();
 
         stateMachine = new StateMachine();
     }
@@ -55,9 +57,30 @@ public class Entity : MonoBehaviour
     {
 
     }
+    public virtual void SlowDownEntity(float duration, float slowMultiplier, bool canOverrideSlowEffect = false)
+    {
+        if (slowDownCoroutine != null)
+        {
+            if (canOverrideSlowEffect)
+                StopCoroutine(slowDownCoroutine);
+            else
+                return;
+        }
+
+        slowDownCoroutine = StartCoroutine(SlowDownEntityCoroutine(duration, slowMultiplier));
+    }
+    protected virtual IEnumerator SlowDownEntityCoroutine(float duration, float slowMultiplier)
+    {
+        yield return null;
+    }
+
+    public virtual void StopSlowDown()
+    {
+        slowDownCoroutine = null;
+    }
     public void RecieveKnockback(Vector2 knockback, float duration)
     {
-        if(knockbackCoroutine != null)
+        if (knockbackCoroutine != null)
             StopCoroutine(knockbackCoroutine);
 
         knockbackCoroutine = StartCoroutine(KnockbackCoroutine(knockback, duration));
@@ -111,7 +134,7 @@ public class Entity : MonoBehaviour
     {
         Gizmos.color = Color.yellow;
         Gizmos.DrawLine(groundCheckTransform.position, groundCheckTransform.position - new Vector3(0, groundCheckDistance));
-            Gizmos.DrawLine(firstWallCheckTransform.position, firstWallCheckTransform.position + new Vector3(wallCheckDistance * facingDirectionValue, 0));
+        Gizmos.DrawLine(firstWallCheckTransform.position, firstWallCheckTransform.position + new Vector3(wallCheckDistance * facingDirectionValue, 0));
         if (secondWallCheckTransform != null)
         {
             Gizmos.DrawLine(secondWallCheckTransform.position, secondWallCheckTransform.position + new Vector3(wallCheckDistance * facingDirectionValue, 0));

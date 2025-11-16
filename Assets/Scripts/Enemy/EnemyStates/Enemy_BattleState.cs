@@ -3,6 +3,7 @@ using UnityEngine;
 public class Enemy_BattleState : EnemyState
 {
     private Transform player;
+    private Transform lastTarget;
     private float lastTimeWasInBattle;
 
     public Enemy_BattleState(Enemy enemy, StateMachine stateMachine, string animatorBoolName) : base(enemy, stateMachine, animatorBoolName)
@@ -20,7 +21,7 @@ public class Enemy_BattleState : EnemyState
 
         if (ShouldRetreat())
         {
-            rigidbody.linearVelocity = new Vector2(enemy.retreatVelocity.x * -DirectionToPlayer(), enemy.retreatVelocity.y);
+            rigidbody.linearVelocity = new Vector2(enemy.retreatVelocity.x * enemy.activeSlowMultiplier * -DirectionToPlayer(), enemy.retreatVelocity.y);
             enemy.HandleFlip(DirectionToPlayer());
         }
         else enemy.SetVelocity(0, rigidbody.linearVelocity.y);
@@ -29,16 +30,29 @@ public class Enemy_BattleState : EnemyState
     {
         base.Update();
         if (enemy.PlayerDetected())
+        {
+            UpdateTargetIfNeeded();
             UpdateBattleTimer();
+        }
         if (BattleTimeIsOver())
             stateMachine.ChangeState(enemy.idleState);
         if (WithinAttackRange() && enemy.PlayerDetected())
             stateMachine.ChangeState(enemy.attackState);
-        else enemy.SetVelocity(enemy.battleMoveSpeed * DirectionToPlayer(), rigidbody.linearVelocity.y);
+        else enemy.SetVelocity(enemy.GetBattleSpeed() * DirectionToPlayer(), rigidbody.linearVelocity.y);
         if (enemy.wallDetected)
             enemy.SetVelocity(0, rigidbody.linearVelocity.y);
     }
+    private void UpdateTargetIfNeeded()
+    {
+        if (enemy.PlayerDetected() == false) return;
+        Transform newTarget = enemy.PlayerDetected().transform;
 
+        if (newTarget != lastTarget)
+        {
+            lastTarget = newTarget;
+            player = newTarget;
+        }
+    }
     private void UpdateBattleTimer() => lastTimeWasInBattle = Time.time;
     private bool BattleTimeIsOver() => Time.time > lastTimeWasInBattle + enemy.battleTimeDuration;
     private bool WithinAttackRange() => DistanceToPlayer() < enemy.attackDistance;

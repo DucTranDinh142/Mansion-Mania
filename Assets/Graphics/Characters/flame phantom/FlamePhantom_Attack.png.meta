@@ -1,0 +1,449 @@
+fileFormatVersion: 2
+guid: 4776121c8111d8e4481992a1879cc01f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9139993186846136829
+    second: FlamePhantom_Attack_0
+  - first:
+      213: -4203357978652936769
+    second: FlamePhantom_Attack_1
+  - first:
+      213: -946474166790688122
+    second: FlamePhantom_Attack_2
+  - first:
+      213: -6877077695040291061
+    second: FlamePhantom_Attack_3
+  - first:
+      213: 8925288844244263184
+    second: FlamePhantom_Attack_4
+  - first:
+      213: 646004507111764736
+    second: FlamePhantom_Attack_5
+  - first:
+      213: 8369998692149900337
+    second: FlamePhantom_Attack_6
+  - first:
+      213: -7761106573130720751
+    second: FlamePhantom_Attack_7
+  - first:
+      213: 1002113772824635010
+    second: FlamePhantom_Attack_8
+  - first:
+      213: -5034659126109352566
+    second: FlamePhantom_Attack_9
+  - first:
+      213: -5957667789123452983
+    second: FlamePhantom_Attack_10
+  - first:
+      213: -8355159037507000878
+    second: FlamePhantom_Attack_11
+  - first:
+      213: 5561200489891021047
+    second: FlamePhantom_Attack_12
+  - first:
+      213: -3301426144687691492
+    second: FlamePhantom_Attack_13
+  - first:
+      213: 2472282618165426681
+    second: FlamePhantom_Attack_14
+  - first:
+      213: -5913289469394542963
+    second: FlamePhantom_Attack_15
+  - first:
+      213: 4089413141994714733
+    second: FlamePhantom_Attack_16
+  - first:
+      213: 7390219998709326071
+    second: FlamePhantom_Attack_17
+  - first:
+      213: 5902802549769854042
+    second: FlamePhantom_Attack_18
+  - first:
+      213: -3914685522860973873
+    second: FlamePhantom_Attack_19
+  - first:
+      213: 7961105049843653112
+    second: FlamePhantom_Attack_20
+  - first:
+      213: -8169333657616180216
+    second: FlamePhantom_Attack_21
+  - first:
+      213: -1050455576939712539
+    second: FlamePhantom_Attack_22
+  - first:
+      213: -8854833926430614152
+    second: FlamePhantom_Attack_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FlamePhantom_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 42
+        width: 54
+        height: 57
+      alignment: 9
+      pivot: {x: 0.3148148, y: 0.01754386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df9547fa067c7de70800000000000000
+      internalID: 9139993186846136829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePhantom_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 43
+        width: 41
+        height: 56
+      alignment: 9
+      pivot: {x: 0.4390244, y: 0.017857144}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb57692503caaa5c0800000000000000
+      internalID: -4203357978652936769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePhantom_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 26
+        width: 90
+        height: 73
+      alignment: 9
+      pivot: {x: 0.1, y: 0.08219178}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6827b5b82c27dd2f0800000000000000
+      internalID: -946474166790688122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePhantom_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 51
+        width: 78
+        height: 48
+      alignment: 9
+      pivot: {x: 0.24358974, y: 0.0625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003b2b13da117f800800000000000000
+      internalID: 646004507111764736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePhantom_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 31
+        width: 101
+        height: 68
+      alignment: 9
+      pivot: {x: 0.17821781, y: 0.029411765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1343410e675382470800000000000000
+      internalID: 8369998692149900337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePhantom_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 42
+        width: 48
+        height: 58
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.01754386}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d520877f138c0c80800000000000000
+      internalID: -8355159037507000878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePhantom_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 13
+        width: 94
+        height: 87
+      alignment: 9
+      pivot: {x: 0.12765957, y: 0.06896552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0ceac816a5d2d40800000000000000
+      internalID: 5561200489891021047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePhantom_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 2
+        width: 100
+        height: 96
+      alignment: 9
+      pivot: {x: 0.12, y: 0.083333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c19e3b1c96afe22d0800000000000000
+      internalID: -3301426144687691492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePhantom_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 16
+        width: 102
+        height: 84
+      alignment: 9
+      pivot: {x: 0.14705883, y: 0.035714287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d66b864069380c830800000000000000
+      internalID: 4089413141994714733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePhantom_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 26
+        width: 85
+        height: 75
+      alignment: 9
+      pivot: {x: 0.23529412, y: 0.013333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc0e182024e3ca9c0800000000000000
+      internalID: -3914685522860973873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlamePhantom_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 22
+        width: 76
+        height: 78
+      alignment: 9
+      pivot: {x: 0.19736843, y: 0.012820513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87d9606757f4d1580800000000000000
+      internalID: -8854833926430614152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: edd3f7a350dfa454e866098d24ae5373
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      FlamePhantom_Attack_0: 9139993186846136829
+      FlamePhantom_Attack_1: -4203357978652936769
+      FlamePhantom_Attack_10: -8355159037507000878
+      FlamePhantom_Attack_14: 2472282618165426681
+      FlamePhantom_Attack_15: -5913289469394542963
+      FlamePhantom_Attack_17: 7390219998709326071
+      FlamePhantom_Attack_18: 5902802549769854042
+      FlamePhantom_Attack_2: -946474166790688122
+      FlamePhantom_Attack_20: 7961105049843653112
+      FlamePhantom_Attack_21: -8169333657616180216
+      FlamePhantom_Attack_22: -1050455576939712539
+      FlamePhantom_Attack_3: 5561200489891021047
+      FlamePhantom_Attack_4: -3301426144687691492
+      FlamePhantom_Attack_5: 4089413141994714733
+      FlamePhantom_Attack_6: 646004507111764736
+      FlamePhantom_Attack_7: 8369998692149900337
+      FlamePhantom_Attack_8: -3914685522860973873
+      FlamePhantom_Attack_9: -8854833926430614152
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

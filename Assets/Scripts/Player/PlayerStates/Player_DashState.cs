@@ -10,10 +10,16 @@ public class Player_DashState : PlayerState
     public override void Enter()
     {
         base.Enter();
+
+        skillManager.dash.OnStartEffect();
+        player.playerVFX.DoImageEchoEffect(player.dashDuration);
+
         dashDirectionValue = player.moveInput.x != 0 ? ((int)player.moveInput.x) : player.facingDirectionValue;
         stateTimer = player.dashDuration;
         ogGravityScale = rigidbody.gravityScale;
         rigidbody.gravityScale = 0;
+
+        player.health.SetCanTakeDamage(false);
     }
     public override void Update()
     {
@@ -37,7 +43,12 @@ public class Player_DashState : PlayerState
     public override void Exit() 
     {
         base.Exit();
+        
+        skillManager.dash.OnEndEffect();
+
         player.SetVelocity(0,0);
         rigidbody.gravityScale = ogGravityScale;
+
+        player.health.SetCanTakeDamage(true);
     }
 }

@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 35891def1691f604ba8778588e86996d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7874975550134305006
+    second: IcePhantom_Attack_0
+  - first:
+      213: 1194982870171160415
+    second: IcePhantom_Attack_1
+  - first:
+      213: -4723440357486601200
+    second: IcePhantom_Attack_2
+  - first:
+      213: -2557366882156705098
+    second: IcePhantom_Attack_3
+  - first:
+      213: -8658488497443991815
+    second: IcePhantom_Attack_4
+  - first:
+      213: 6150920182089824278
+    second: IcePhantom_Attack_5
+  - first:
+      213: -2780391924807995189
+    second: IcePhantom_Attack_6
+  - first:
+      213: 4120100477540354913
+    second: IcePhantom_Attack_7
+  - first:
+      213: 7229096147026233953
+    second: IcePhantom_Attack_8
+  - first:
+      213: 4711580939039012512
+    second: IcePhantom_Attack_9
+  - first:
+      213: 2714088530108075632
+    second: IcePhantom_Attack_10
+  - first:
+      213: -100819711030452518
+    second: IcePhantom_Attack_11
+  - first:
+      213: -94660270732242541
+    second: IcePhantom_Attack_12
+  - first:
+      213: -3239095509827829974
+    second: IcePhantom_Attack_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 25
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: IcePhantom_Attack_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 8
+        width: 32
+        height: 39
+      alignment: 9
+      pivot: {x: 0.15625, y: 0.025641026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee044a81a88894d60800000000000000
+      internalID: 7874975550134305006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_1
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 7
+        width: 33
+        height: 40
+      alignment: 9
+      pivot: {x: 0.3030303, y: 0.025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5f8a31d69e659010800000000000000
+      internalID: 1194982870171160415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 6
+        width: 32
+        height: 41
+      alignment: 9
+      pivot: {x: 0.28125, y: 0.024390243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01c544e4508f27eb0800000000000000
+      internalID: -4723440357486601200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_3
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 5
+        width: 32
+        height: 42
+      alignment: 9
+      pivot: {x: 0.3125, y: 0.023809524}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ba83b4ce58628cd0800000000000000
+      internalID: -2557366882156705098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1
+        width: 68
+        height: 46
+      alignment: 9
+      pivot: {x: 0.25, y: 0.02173913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fe8b02169ed6d780800000000000000
+      internalID: -8658488497443991815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_5
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 1
+        width: 68
+        height: 46
+      alignment: 9
+      pivot: {x: 0.25, y: 0.02173913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618be3f01557c5550800000000000000
+      internalID: 6150920182089824278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_6
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 3
+        width: 38
+        height: 44
+      alignment: 9
+      pivot: {x: 0.42105263, y: 0.022727273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc0747986401a69d0800000000000000
+      internalID: -2780391924807995189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_7
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 3
+        width: 36
+        height: 44
+      alignment: 9
+      pivot: {x: 0.44444445, y: 0.022727273}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16bc5ba1e898d2930800000000000000
+      internalID: 4120100477540354913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_8
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 4
+        width: 30
+        height: 45
+      alignment: 9
+      pivot: {x: 0.53333336, y: 0.022222223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16ac4a2f4a8e25460800000000000000
+      internalID: 7229096147026233953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 3
+        width: 30
+        height: 46
+      alignment: 9
+      pivot: {x: 0.43333337, y: 0.02173913}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6fbe9a6e5e26140800000000000000
+      internalID: 4711580939039012512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_10
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 0
+        width: 72
+        height: 49
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.10204081}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07ecd0663216aa520800000000000000
+      internalID: 2714088530108075632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_11
+      rect:
+        serializedVersion: 2
+        x: 550
+        y: 6
+        width: 69
+        height: 43
+      alignment: 9
+      pivot: {x: 0.17391305, y: 0.046511628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade1ca9c101d99ef0800000000000000
+      internalID: -100819711030452518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_12
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 10
+        width: 41
+        height: 39
+      alignment: 9
+      pivot: {x: 0.31707317, y: 0.025641026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39199ac3cf2bfaef0800000000000000
+      internalID: -94660270732242541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IcePhantom_Attack_13
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 10
+        width: 41
+        height: 39
+      alignment: 9
+      pivot: {x: 0.31707317, y: 0.025641026}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2f36279bcb6c03d0800000000000000
+      internalID: -3239095509827829974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: edc26936b9b064a43a505be7bd34d0d2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      IcePhantom_Attack_0: 7874975550134305006
+      IcePhantom_Attack_1: 1194982870171160415
+      IcePhantom_Attack_10: 2714088530108075632
+      IcePhantom_Attack_11: -100819711030452518
+      IcePhantom_Attack_12: -94660270732242541
+      IcePhantom_Attack_13: -3239095509827829974
+      IcePhantom_Attack_2: -4723440357486601200
+      IcePhantom_Attack_3: -2557366882156705098
+      IcePhantom_Attack_4: -8658488497443991815
+      IcePhantom_Attack_5: 6150920182089824278
+      IcePhantom_Attack_6: -2780391924807995189
+      IcePhantom_Attack_7: 4120100477540354913
+      IcePhantom_Attack_8: 7229096147026233953
+      IcePhantom_Attack_9: 4711580939039012512
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

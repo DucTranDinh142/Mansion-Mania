@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca4733083c6c2849ad6b5de626b2bed, type: 3}
+  m_Name: "Skill Data - B\xE0nh tr\u01B0\u1EDBng l\xE3nh \u0111\u1ECBa-\u0110\u1EA1i
+    tuy\u1EC7t ch\u1EE7ng-E1"
+  m_EditorClassIdentifier: 
+  skillName: "B\xE0nh tr\u01B0\u1EDBng l\xE3nh \u0111\u1ECBa: \u0110\u1EA1i tuy\u1EC7t
+    ch\u1EE7ng"
+  description: "B\u1EA1n l\u01A1 l\u1EEDng tr\xEAn kh\xF4ng trung khi t\u1EA1o ra
+    v\xF9ng kh\xF4ng gian, tri\u1EC7u h\u1ED3i h\xE0ng lo\u1EA1t c\xE1c tinh th\u1EC3
+    bay \u0111\u1EBFn nh\u1EEFng k\u1EBB \u0111\u1ECBch trong v\xF9ng kh\xF4ng gian
+    v\xE0 g\xE2y s\xE1t th\u01B0\u01A1ng cho ch\xFAng thay v\xEC \u0111\xF3ng b\u0103ng
+    chuy\u1EC3n \u0111\u1ED9ng.\n\n(C\u01A1n \xE1c m\u1ED9ng cu\u1ED1i c\xF9ng c\u1EE7a
+    lo\xE0i kh\u1EE7ng long.)"
+  icon: {fileID: 573626176, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  cost: 20
+  unlockByDefault: 0
+  skillType: 4
+  upgradeData:
+    upgradeType: 23
+    cooldown: 25
+    scaleData:
+      physical: 0
+      elemental: 1.75
+      chillDuration: 3
+      chillSlowMultiplier: 0.2
+      burnDuration: 5
+      burnDamageScale: 0.6
+      burnTickPerSec: 2
+      shockDuration: 3
+      shockDamageScale: 1
+      shockCharge: 0.35
