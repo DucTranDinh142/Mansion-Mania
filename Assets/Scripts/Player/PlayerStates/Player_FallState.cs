@@ -10,6 +10,14 @@ public class Player_FallState : Player_AiredState
         base.Update();
 
         if (player.groundDetected == true)
+        {
             stateMachine.ChangeState(player.idleState);
+            player.entitySFX.Landing();
+        }
+    }
+    public override void Exit()
+    {
+        base.Exit();
+        player.entitySFX.Landing();
     }
 }

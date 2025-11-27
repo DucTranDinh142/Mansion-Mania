@@ -7,6 +7,7 @@ public class Player_IdleState : Player_GroundedState
     {
         base.Enter();
         player.SetVelocity(0, rigidbody.linearVelocity.y);
+        player.entitySFX?.StopVFX();
     }
     public override void Update()
     {

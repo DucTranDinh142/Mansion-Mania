@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class Enemy : Entity
 {
+    public Entity_Stats entityStats { get; private set; }
+
     public Enemy_Health health { get; private set; }
     public Enemy_IdleState idleState;
     public Enemy_MoveState moveState;
@@ -12,6 +14,9 @@ public class Enemy : Entity
     public Enemy_DeadState deadState;
     public Enemy_StunnedState stunnedState;
 
+    [Header("Base Reward on Killed")]
+    [SerializeField] private int gold;
+    [SerializeField] private int skillPoint;
     [Header("Battle Phase Stats")]
     public float surprisedTimer;
     public float battleMoveSpeed;
@@ -47,6 +52,8 @@ public class Enemy : Entity
     {
         base.Awake();
         health = GetComponent<Enemy_Health>();
+        entityStats = GetComponent<Entity_Stats>();
+
     }
     protected override IEnumerator SlowDownEntityCoroutine(float duration, float slowMultiplier)
     {
@@ -68,6 +75,9 @@ public class Enemy : Entity
     public void EnableCounterWindow(bool enable) => canBeStunned = enable; 
     public override void EntityDeath()
     {
+        Player player = FindFirstObjectByType<Player>();
+        player.inventory.gold += gold;
+        player.ui.skillTreeUI.AddSkillPoints(skillPoint);
         base.EntityDeath();
         stateMachine.ChangeState(deadState);
     }

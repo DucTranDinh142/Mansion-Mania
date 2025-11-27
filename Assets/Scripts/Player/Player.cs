@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class Player : Entity
 {
+    public static Player instance;
     public static event Action OnPlayerDeath;
 
-    private UI ui;
+    public UI ui {  get; private set; }
     public PlayerInputSet input { get; private set; }
     public Player_SkillManager skillManager { get; private set; }
     public Player_VFX playerVFX { get; private set; }
     public Entity_Health health { get; private set; }
     public Entity_StatusHandler statusHandler { get; private set; }
+    public Player_Combat combat { get; private set; }
+    public Inventory_Player inventory { get; private set; }
+    public Player_Stats stats { get; private set; }
 
     #region State Variables
     public Player_IdleState idleState { get; private set; }
@@ -59,14 +63,19 @@ public class Player : Entity
     protected override void Awake()
     {
         base.Awake();
+        instance = this;
 
         ui = FindAnyObjectByType<UI>();
-        input = new PlayerInputSet();
         skillManager = GetComponent<Player_SkillManager>();
         playerVFX = GetComponent<Player_VFX>();
         statusHandler = GetComponent<Entity_StatusHandler>();
         health = GetComponent<Entity_Health>();
+        combat = GetComponent<Player_Combat>();
+        inventory = GetComponent<Inventory_Player>();
+        stats = GetComponent<Player_Stats>();
 
+        input = new PlayerInputSet();
+        ui.SetupControlsUI(input);
         #region States Machine Management
         idleState = new Player_IdleState(stateMachine, "Idle", this);
         moveState = new Player_MoveState(stateMachine, "Move", this);
@@ -101,6 +110,28 @@ public class Player : Entity
         yield return new WaitForEndOfFrame();
         stateMachine.ChangeState(basicAttackState);
     }
+    private void TryInteract()
+    {
+        Transform closest = null;
+        float closestDistance = Mathf.Infinity;
+        Collider2D[] objectsAround = Physics2D.OverlapCircleAll(transform.position, 1f);
+
+        foreach (var target in objectsAround)
+        {
+            IInteractable interactable = target.GetComponent<IInteractable>();
+            if(interactable == null ) continue;
+
+            float distance = Vector2.Distance(transform.position, target.transform.position);
+            if( distance < closestDistance)
+            {
+                closestDistance = distance;
+                closest = target.transform;
+            }
+            if (closest == null) return;
+
+            closest.GetComponent<IInteractable>().Interact();
+        }
+    }
     private void OnEnable()
     {
         input.Enable();
@@ -110,9 +141,13 @@ public class Player : Entity
         input.Player.Movement.performed += context => moveInput = context.ReadValue<Vector2>();
         input.Player.Movement.canceled += context => moveInput = Vector2.zero;
 
-        input.Player.ToggleSkillTreeUI.performed += context => ui.ToggleSkillTreeUI();
+        //input.Player.ToggleSkillTreeUI.performed += context => ui.ToggleSkillTreeUI();
+        //input.Player.ToggleCharacterUI.performed += context => ui.ToggleInvenToryUI();
         input.Player.Spell.performed += context => skillManager.shard.TryUseSkill();
         input.Player.Spell.performed += context => skillManager.timeEcho.TryUseSkill();
+        input.Player.Interact.performed += context => TryInteract();
+        input.Player.QuickItemSlot_1.performed += context => inventory.TryUseQuickItemInSlot(1); 
+        input.Player.QuickItemSlot_2.performed += context => inventory.TryUseQuickItemInSlot(2); 
     }
     private void OnDisable()
     {

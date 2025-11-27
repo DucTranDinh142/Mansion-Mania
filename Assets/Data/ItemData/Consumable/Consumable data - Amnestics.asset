@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ded64eed8b5196149944b4d2a6269e30, type: 3}
+  m_Name: Consumable data - Amnestics
+  m_EditorClassIdentifier: 
+  itemPrice: 500
+  minStackSizeAtShop: 1
+  maxStackSizeAtShop: 1
+  itemRarity: 900
+  DropChance: 10.1
+  maxDropChance: 100
+  craftRecipe:
+  - itemData: {fileID: 11400000, guid: e496c1660fa74b44590ea0146a78762a, type: 2}
+    stackSize: 10
+    itemEffect: {fileID: 0}
+  itemName: "Thu\u1ED1c x\xF3a tr\xED nh\u1EDB c\u1EA5p A"
+  itemIcon: {fileID: 8609530406991562568, guid: 2f1370aef4c08594cbfe6427bc4b0aaa, type: 3}
+  inventoryIcon: {fileID: -352202175, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  itemType: 4
+  maxStackSize: 3
+  itemEffect: {fileID: 11400000, guid: 30f5f870f9c87054093e5b60ace96ce0, type: 2}

@@ -7,9 +7,9 @@ public class Enemy_IdleState : Enemy_GroundedState
     public override void Enter()
     {
         base.Enter();
-
         enemy.SetVelocity(0, rigidbody.linearVelocity.y);
         stateTimer = enemy.idleTime;
+        enemy.entitySFX?.StopVFX();
     }
     public override void Update()
     {

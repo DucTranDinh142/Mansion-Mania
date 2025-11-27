@@ -23,7 +23,7 @@ public class SkillObject_Sword : SkillObject_Base
         this.swordManager = swordManager;
 
         playerTransform = swordManager.transform.root;
-        playerStats = swordManager.player.entityStats;
+        playerStats = swordManager.player.stats;
         scaleData = swordManager.scaleData;
     }
     public void GetSwordBackToPlayer() => shouldComeBack = true;

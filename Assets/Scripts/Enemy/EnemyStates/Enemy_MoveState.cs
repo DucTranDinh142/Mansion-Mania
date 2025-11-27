@@ -9,6 +9,8 @@ public class Enemy_MoveState : Enemy_GroundedState
         base.Enter();
         if (enemy.groundDetected == false || enemy.wallDetected)
             enemy.Flip();
+
+        enemy.entitySFX?.Moving();
     }
     public override void Update()
     {
@@ -18,5 +20,10 @@ public class Enemy_MoveState : Enemy_GroundedState
 
         if (enemy.groundDetected == false || enemy.wallDetected)
             stateMachine.ChangeState(enemy.idleState);
+    }
+    public override void Exit()
+    {
+        base.Exit();
+        enemy.entitySFX.StopVFX();
     }
 }

@@ -123,6 +123,7 @@ GameObject:
   - component: {fileID: 1659796232091558352}
   - component: {fileID: 4005748470135057513}
   - component: {fileID: 5480889514861901898}
+  - component: {fileID: 3034957092875056716}
   m_Layer: 7
   m_Name: Object_Chest
   m_TagString: Untagged
@@ -231,6 +232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6a05e87950d94d4a86e4254002e1c11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canDropItems: 1
 --- !u!114 &5480889514861901898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -246,9 +248,25 @@ MonoBehaviour:
   onDamageMaterial: {fileID: 2100000, guid: 588b3e77d14223942823701c1d0cd4e3, type: 2}
   onDamageVFXDuration: 0.15
   hitVFXColor: {r: 1, g: 1, b: 1, a: 1}
-  hitVFX: {fileID: 0}
+  hitVFX: {fileID: 1829016830207108774, guid: 01cf9ba82541900418c1ecd9c1278981, type: 3}
   critVFXColor: {r: 1, g: 1, b: 1, a: 1}
   critVFX: {fileID: 0}
-  chillVFXColor: {r: 0, g: 1, b: 1, a: 1}
-  burnVFXColor: {r: 1, g: 0, b: 0, a: 1}
-  electrifyVFXColor: {r: 0, g: 0, b: 0, a: 0}
+  chillVFXColor: {r: 0.5176471, g: 1, b: 1, a: 1}
+  burnVFXColor: {r: 1, g: 0.6666667, b: 0.18039216, a: 1}
+  shockVFXColor: {r: 1, g: 0.99607843, b: 0.48235294, a: 1}
+--- !u!114 &3034957092875056716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5563822104666590966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c06d37c4d1816e14ab9033c61e21d743, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemDropPrefab: {fileID: 2770995797132427296, guid: 5f7d26398863131478dfdcad8495147a, type: 3}
+  dropData: {fileID: 0}
+  maxRarityAmount: 2000
+  maxItemsToDrop: 4

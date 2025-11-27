@@ -56,7 +56,7 @@ public class Skill_TimeEcho_A : Skill_Base
     public override void TryUseSkill()
     {
         if (CanUseSkill() == false) return;
-
+        base.TryUseSkill();
         CreateTimeEcho();
         SetSkillOnCoolDown();
     }

@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba87d50c54593fe4fb65c293f05e28dc, type: 3}
+  m_Name: "Equipment data - H\u1EA7u m\u1ED9c b\u1ED5ng"
+  m_EditorClassIdentifier: 
+  itemPrice: 100
+  minStackSizeAtShop: 1
+  maxStackSizeAtShop: 1
+  itemRarity: 850
+  DropChance: 15.1
+  maxDropChance: 65
+  craftRecipe:
+  - itemData: {fileID: 11400000, guid: ddb297159d3abe94e820b0bd4f0b3a15, type: 2}
+    stackSize: 4
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: e7bbc63631eeea44dbe3ccb63627c08a, type: 2}
+    stackSize: 4
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 3de75ac459cf2cd419e249c0dd8997af, type: 2}
+    stackSize: 2
+    itemEffect: {fileID: 0}
+  itemName: "H\u1EA7u m\u1ED9c b\u1ED5ng"
+  itemIcon: {fileID: 21300000, guid: 8259dde992ad945458fefd1cc68f673e, type: 3}
+  inventoryIcon: {fileID: -728471023, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  itemType: 1
+  maxStackSize: 1
+  itemEffect: {fileID: 0}
+  modifiers:
+  - statType: 7
+    value: 0.1
+  - statType: 9
+    value: 25
+  - statType: 8
+    value: 20
+  - statType: 16
+    value: 20

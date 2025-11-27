@@ -204,7 +204,7 @@ TextureImporter:
         height: 185
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 49, y: 49, z: 49, w: 50}
       customData: 
       outline: []
       physicsShape: []
@@ -270,7 +270,7 @@ TextureImporter:
         height: 203
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 35, y: 11, z: 34, w: 36}
       customData: 
       outline: []
       physicsShape: []
@@ -336,7 +336,7 @@ TextureImporter:
         height: 84
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 16, y: 16, z: 16, w: 16}
       customData: 
       outline: []
       physicsShape: []
@@ -358,7 +358,7 @@ TextureImporter:
         height: 182
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 59, y: 59, z: 59, w: 58}
       customData: 
       outline: []
       physicsShape: []
@@ -402,7 +402,7 @@ TextureImporter:
         height: 85
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 7, z: 7, w: 7}
       customData: 
       outline: []
       physicsShape: []
@@ -424,7 +424,7 @@ TextureImporter:
         height: 118
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 33, y: 33, z: 34, w: 33}
       customData: 
       outline: []
       physicsShape: []
@@ -446,7 +446,7 @@ TextureImporter:
         height: 172
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 18, z: 8, w: 18}
       customData: 
       outline: []
       physicsShape: []
@@ -462,13 +462,13 @@ TextureImporter:
       name: artdecoUI_PIPO_tr_17
       rect:
         serializedVersion: 2
-        x: 365
+        x: 366
         y: 91
-        width: 357
+        width: 356
         height: 289
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 95, y: 98, z: 97, w: 98}
       customData: 
       outline: []
       physicsShape: []

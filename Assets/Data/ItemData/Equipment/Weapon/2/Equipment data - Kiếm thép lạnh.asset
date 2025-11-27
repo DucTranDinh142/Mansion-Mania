@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba87d50c54593fe4fb65c293f05e28dc, type: 3}
+  m_Name: "Equipment data - Ki\u1EBFm th\xE9p l\u1EA1nh"
+  m_EditorClassIdentifier: 
+  itemPrice: 100
+  minStackSizeAtShop: 1
+  maxStackSizeAtShop: 1
+  itemRarity: 850
+  DropChance: 15.1
+  maxDropChance: 100
+  craftRecipe:
+  - itemData: {fileID: 11400000, guid: 4e8ad326df368fe46850251983ae2a38, type: 2}
+    stackSize: 4
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 2fc01b0858c2af1479bbb6cd9fafeb38, type: 2}
+    stackSize: 1
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 9054b458f4ab5ef4b8a9148411cac623, type: 2}
+    stackSize: 3
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 9d7f5ce16b70c0e4c86608f14f4f0f4a, type: 2}
+    stackSize: 3
+    itemEffect: {fileID: 0}
+  itemName: "Ki\u1EBFm th\xE9p l\u1EA1nh"
+  itemIcon: {fileID: 21300000, guid: 3c72368bf34efcf46b5c06a876c2888c, type: 3}
+  inventoryIcon: {fileID: -1250976514, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  itemType: 1
+  maxStackSize: 1
+  itemEffect: {fileID: 0}
+  modifiers:
+  - statType: 6
+    value: 20
+  - statType: 10
+    value: 20
+  - statType: 18
+    value: 25
+  - statType: 17
+    value: 25

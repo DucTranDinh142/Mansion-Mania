@@ -9,6 +9,7 @@ public class Player_WallJumpState : PlayerState
     {
         base.Enter();
         player.SetVelocity(player.wallJumpVelocity.x * -player.facingDirectionValue, player.wallJumpVelocity.y);
+        player.entitySFX.Jumping();
     }
     public override void Update()
     {

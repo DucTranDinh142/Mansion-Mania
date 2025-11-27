@@ -15,6 +15,7 @@ public class Player_CounterAttackState : PlayerState
         counteredSomebody = player_Combat.CounterAttackPerformed();
 
         animator.SetBool("CounterAttackPerformed", counteredSomebody);
+        player.entitySFX.CounterAttack();
     }
     public override void Update()
     {

@@ -1,15 +1,21 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Entity_Health : MonoBehaviour, IDamagable
 {
+    public event Action OnTakingDamage;
+    public event Action OnHealthUpdate;
+    public event Action OnAboutToDie;
+
     private Slider healthBar;
     private Entity entity;
     private Entity_VFX entityVFX;
     private Entity_Stats entityStats;
+    private Entity_DropManager dropManager;
 
     [SerializeField] protected float currentHP;
-    public bool isDead {  get; private set; }
+    public bool isDead { get; private set; }
     protected bool canTakeDamage = true;
     [Header("HP Regen")]
     [SerializeField] private float regenInterval = 1;
@@ -29,6 +35,7 @@ public class Entity_Health : MonoBehaviour, IDamagable
         entityVFX = GetComponent<Entity_VFX>();
         entityStats = GetComponent<Entity_Stats>();
         healthBar = GetComponentInChildren<Slider>();
+        dropManager = GetComponent<Entity_DropManager>();
         SetUpHealth();
 
     }
@@ -36,9 +43,11 @@ public class Entity_Health : MonoBehaviour, IDamagable
     private void SetUpHealth()
     {
         if (entityStats == null) return;
-            currentHP = entityStats.GetMaxHP();
-            UpdateHealthBar();
-            InvokeRepeating(nameof(RegenerateHP), 0, regenInterval);
+        currentHP = entityStats.GetMaxHP();
+
+        OnHealthUpdate += UpdateHealthBar;
+        UpdateHealthBar();
+        InvokeRepeating(nameof(RegenerateHP), 0, regenInterval);
     }
 
     public virtual bool TakeDamage(float damage, float elementalDamage, ElementType element, Transform damageDealer)
@@ -47,7 +56,8 @@ public class Entity_Health : MonoBehaviour, IDamagable
 
         if (AttackEvaded()) return false;
 
-        Entity_Stats attackerStats = damageDealer.GetComponent<Entity_Stats>();
+        Entity_Stats attackerStats = damageDealer?.GetComponent<Entity_Stats>();
+
         float armorReduction = attackerStats != null ? attackerStats.GetArmorRedution() : 0f;
 
 
@@ -56,12 +66,15 @@ public class Entity_Health : MonoBehaviour, IDamagable
 
         float resistance = entityStats != null ? entityStats.GetElementalReistance(element) : 0f;
         float elementalDamageTaken = elementalDamage * (1 - resistance);
+        if (damageDealer != null)
+        {
+            TakeKnockBack(damageDealer, physicalDamageTaken);
+        }
 
-        TakeKnockBack(damageDealer, physicalDamageTaken);
         ReduceHP(physicalDamageTaken + elementalDamageTaken);
-
         lastDamageTaken = physicalDamageTaken + elementalDamageTaken;
 
+        OnTakingDamage?.Invoke();
         return true;
     }
 
@@ -70,8 +83,8 @@ public class Entity_Health : MonoBehaviour, IDamagable
     private bool AttackEvaded()
     {
         if (entityStats == null) return false;
-        else 
-            return Random.Range(0, 100) < entityStats.GetEvasion();
+        else
+            return UnityEngine.Random.Range(0, 100) < entityStats.GetEvasion();
     }
 
     public void IncreaseHP(float healAmount)
@@ -82,8 +95,7 @@ public class Entity_Health : MonoBehaviour, IDamagable
         float maxHP = entityStats.GetMaxHP();
 
         currentHP = Mathf.Min(newHP, maxHP);
-        UpdateHealthBar();
-
+        OnHealthUpdate?.Invoke();
     }
     public void RegenerateHP()
     {
@@ -98,8 +110,9 @@ public class Entity_Health : MonoBehaviour, IDamagable
             entityVFX?.PlayOnDamageVFX();
 
         currentHP -= damage;
-        UpdateHealthBar();
+        OnHealthUpdate?.Invoke();
 
+        OnAboutToDie?.Invoke();
         if (currentHP <= 0)
             Die();
     }
@@ -108,12 +121,17 @@ public class Entity_Health : MonoBehaviour, IDamagable
     {
         isDead = true;
         entity?.EntityDeath();
+        dropManager?.DropItems();
     }
     public float GetHPPercent() => (float)currentHP / entityStats.GetMaxHP();
     public void SetHPtoPercent(float percent)
     {
         currentHP = entityStats.GetMaxHP() * Mathf.Clamp01(percent);
-        UpdateHealthBar();
+        OnHealthUpdate?.Invoke();
+    }
+    public float GetCurrentHealth()
+    {
+        return currentHP;
     }
     private void UpdateHealthBar()
     {
@@ -146,5 +164,5 @@ public class Entity_Health : MonoBehaviour, IDamagable
             damage / entityStats.GetMaxHP() > heavyDamageThreshold;
 
     }
-        
+
 }

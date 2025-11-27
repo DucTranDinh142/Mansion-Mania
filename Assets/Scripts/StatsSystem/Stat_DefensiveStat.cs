@@ -7,5 +7,5 @@ public class Stat_DefensiveStat
 
     public Stat fireResistance;
     public Stat iceResistance;
-    public Stat lightingResistance;
+    public Stat lightningResistance;
 }

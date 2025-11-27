@@ -10,7 +10,7 @@ public class Entity : MonoBehaviour
 
     public Animator entityAnimator { get; private set; }
     public Rigidbody2D entityRigidbody2D { get; private set; }
-    public Entity_Stats entityStats { get; private set; }
+    public Entity_SFX entitySFX { get; private set; }
     protected StateMachine stateMachine;
 
     private bool facingRight = true;
@@ -34,7 +34,7 @@ public class Entity : MonoBehaviour
     {
         entityAnimator = GetComponentInChildren<Animator>();
         entityRigidbody2D = GetComponent<Rigidbody2D>();
-        entityStats = GetComponent<Entity_Stats>();
+        entitySFX = GetComponent<Entity_SFX>();
 
         stateMachine = new StateMachine();
     }

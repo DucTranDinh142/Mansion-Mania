@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba87d50c54593fe4fb65c293f05e28dc, type: 3}
+  m_Name: "Equipment data - Gi\xE1p y\xEAu tinh"
+  m_EditorClassIdentifier: 
+  itemPrice: 50
+  minStackSizeAtShop: 1
+  maxStackSizeAtShop: 1
+  itemRarity: 300
+  DropChance: 70.1
+  maxDropChance: 100
+  craftRecipe:
+  - itemData: {fileID: 11400000, guid: ddb297159d3abe94e820b0bd4f0b3a15, type: 2}
+    stackSize: 3
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: ba4fc313b357c1e4ab9aa795ce3d42bf, type: 2}
+    stackSize: 5
+    itemEffect: {fileID: 0}
+  itemName: "Gi\xE1p y\xEAu tinh"
+  itemIcon: {fileID: 3475101186164888376, guid: 2f1370aef4c08594cbfe6427bc4b0aaa, type: 3}
+  inventoryIcon: {fileID: -621890797, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  itemType: 2
+  maxStackSize: 1
+  itemEffect: {fileID: 0}
+  modifiers:
+  - statType: 16
+    value: 15
+  - statType: 7
+    value: 0.015
+  - statType: 9
+    value: 10

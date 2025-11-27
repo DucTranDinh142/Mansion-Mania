@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 459a0fea4a1c3db43b608f2af62b933f, type: 3}
+  m_Name: "Item Effect - Revive - \xC1o cho\xE0ng th\u1EBF m\u1EA1ng"
+  m_EditorClassIdentifier: 
+  effectDescription: "Khi b\u1EA1n c\u1EADn k\u1EC1 c\xE1i ch\u1EBFt, h\u1ED3i ph\u1EE5c
+    50% l\u01B0\u1EE3ng m\xE1u t\u1ED1i \u0111a thay v\xEC thua cu\u1ED9c. th\u1EDDi
+    gian h\u1ED3i n\u1ED9i t\u1EA1i l\xE0 3 ph\xFAt."
+  revivePercent: 0.5
+  cooldown: 360
+  reviveVFX: {fileID: 1415831271007175218, guid: 6e869fdaddb874a4387e0fcb3990475b, type: 3}

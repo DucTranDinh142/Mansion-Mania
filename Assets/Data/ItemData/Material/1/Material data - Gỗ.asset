@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c6d94f97bf0d54478aa186668b290a0, type: 3}
+  m_Name: "Material data - G\u1ED7"
+  m_EditorClassIdentifier: 
+  itemPrice: 10
+  minStackSizeAtShop: 1
+  maxStackSizeAtShop: 5
+  itemRarity: 100
+  DropChance: 90.1
+  maxDropChance: 100
+  craftRecipe: []
+  itemName: "G\u1ED7"
+  itemIcon: {fileID: -1610602217286185177, guid: 2f1370aef4c08594cbfe6427bc4b0aaa, type: 3}
+  inventoryIcon: {fileID: 1961112763, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  itemType: 0
+  maxStackSize: 32
+  itemEffect: {fileID: 0}

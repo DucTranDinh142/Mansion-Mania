@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba87d50c54593fe4fb65c293f05e28dc, type: 3}
+  m_Name: "Equipment data - S\xFAng \u0111i\u1EC7n t\u1EEB"
+  m_EditorClassIdentifier: 
+  itemPrice: 100
+  minStackSizeAtShop: 1
+  maxStackSizeAtShop: 1
+  itemRarity: 850
+  DropChance: 15.1
+  maxDropChance: 100
+  craftRecipe:
+  - itemData: {fileID: 11400000, guid: 9054b458f4ab5ef4b8a9148411cac623, type: 2}
+    stackSize: 4
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 4e8ad326df368fe46850251983ae2a38, type: 2}
+    stackSize: 4
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 839e46cbf4019eb459fb897263bbec4e, type: 2}
+    stackSize: 1
+    itemEffect: {fileID: 0}
+  itemName: "S\xFAng \u0111i\u1EC7n t\u1EEB"
+  itemIcon: {fileID: 21300000, guid: 2436b19a237d91b4cb6c59bb7ed2588a, type: 3}
+  inventoryIcon: {fileID: -830467210, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  itemType: 1
+  maxStackSize: 1
+  itemEffect: {fileID: 11400000, guid: 042508010b276a344ac672774a8d3825, type: 2}
+  modifiers:
+  - statType: 13
+    value: 20
+  - statType: 9
+    value: 25
+  - statType: 7
+    value: 0.05

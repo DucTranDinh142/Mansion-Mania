@@ -8,7 +8,7 @@ public class Player_DeadState : PlayerState
     public override void Enter()
     {
         base.Enter();
-
+        player.entitySFX.Dying();
         input.Disable();
         rigidbody.simulated = false;
     }

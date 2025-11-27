@@ -29,3 +29,5 @@ Current version Major Update Note: Indev v0.7 - Numbers, Elments and an Yggdrasi
 *3 new status effect, now if elemental damage was strucked, the damage taker will have debuff depends on what is damage dealer major element stat \n
 *3 new enemy, each deal a kind of elemental damage;
 *Last but not least, a functionable skilltree! Try all skills for yourself, but be careful, for unlock some skills are gonna forever lock some others.
+Current version Major Update Note: Alpha v1 - Everything
+There is only a boss left

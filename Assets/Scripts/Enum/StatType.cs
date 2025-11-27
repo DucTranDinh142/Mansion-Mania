@@ -15,11 +15,12 @@
     ArmorReduction,//Điểm xuyên giáp
     IceDamage,//Nguyên tố băng
     FireDamage,//Nguyên tố lửa
-    LightingDamage,//Nguyên tố điện/năng lượng
+    LightningDamage,//Nguyên tố điện/năng lượng
+    ElementalDamage,//Kết hợp sức mạnh của cả ba nguyên tố, với nguyên tố mạnh nhất được cộng đủ sát thương và gây hiệu ứng tương ứng, hai nguyên tố còn lại bổ trở 50% lượng điểm của chúng cho chỉ số này
 
     Armor,//Giáp
     EvasionChance,//Tỷ lệ né tránh
     FireResistance,//Kháng lửa
     IceResistance,//Kháng băng
-    LightingResistance,//Kháng điện/năng lượng
+    LightningResistance,//Kháng điện/năng lượng
 }

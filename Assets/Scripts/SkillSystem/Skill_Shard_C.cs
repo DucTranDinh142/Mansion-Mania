@@ -39,8 +39,9 @@ public class Skill_Shard_C : Skill_Base
     }
     public override void TryUseSkill()
     {
+       
         if (CanUseSkill() == false) return;
-
+        base.TryUseSkill();
         if (Unlock(SkillUpgradeType.Shard_C))
             HandleShardRegular();
         if(Unlock(SkillUpgradeType.Shard_MoveToEnemy_C1))

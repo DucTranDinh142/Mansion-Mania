@@ -29,6 +29,7 @@ public class Player_SwordThrowState : PlayerState
 
             skillManager.swordThrow.EnableDots(false);
             skillManager.swordThrow.ConfirmTrajectory(directionToMouse);
+            player.entitySFX.AttackMiss();
         }
         if (input.Player.RangeAttack.WasReleasedThisFrame() || triggerCalled)
         {

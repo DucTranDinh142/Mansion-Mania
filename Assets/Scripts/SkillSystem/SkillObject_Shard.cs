@@ -27,7 +27,7 @@ public class SkillObject_Shard : SkillObject_Base
     {
         this.shardManager = shardManager;
 
-        playerStats = shardManager.player.entityStats;
+        playerStats = shardManager.player.stats;
         scaleData = shardManager.scaleData;
 
         float detonationTime = shardManager.GetDetonateTime();
@@ -39,7 +39,7 @@ public class SkillObject_Shard : SkillObject_Base
 
         this.shardManager = shardManager;
 
-        playerStats = shardManager.player.entityStats;
+        playerStats = shardManager.player.stats;
         scaleData = shardManager.scaleData;
 
         Invoke(nameof(Explode), detonationTime);

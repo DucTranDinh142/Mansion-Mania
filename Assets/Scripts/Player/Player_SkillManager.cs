@@ -9,7 +9,7 @@ public class Player_SkillManager : MonoBehaviour
     public Skill_TimeEcho_A timeEcho { get; private set; }
     public Skill_Ultimate_E ultimate { get; private set; }
 
-    private Skill_Base[] allskills;
+    public Skill_Base[] allSkills { get; private set; }
 
     private void Awake()
     {
@@ -19,12 +19,12 @@ public class Player_SkillManager : MonoBehaviour
         timeEcho = GetComponentInChildren<Skill_TimeEcho_A>();
         ultimate = GetComponentInChildren<Skill_Ultimate_E>();
 
-        allskills = GetComponentsInChildren<Skill_Base>();
+        allSkills = GetComponentsInChildren<Skill_Base>();
     }
 
     public void ReduceAllSkillCooldownBy(float amount)
     {
-        foreach (var skill in allskills)
+        foreach (var skill in allSkills)
         {
             skill.ReduceCooldownBy(amount);
         }

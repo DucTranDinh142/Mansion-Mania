@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b19643e83667c140958e156cec27cb5, type: 3}
+  m_Name: "Item Effect data - Ice Blast - V\u01B0\u01A1ng mi\u1EC7n b\u0103ng"
+  m_EditorClassIdentifier: 
+  effectDescription: "Khi m\xE1u c\u1EE7a b\u1EA1n xu\u1ED1ng ng\u01B0\u1EE1ng 50%,
+    ph\xE1t ra kh\xED l\u1EA1nh g\xE2y 150 s\xE1t th\u01B0\u01A1ng l\u1EEDa ra xung
+    quanh. Th\u1EDDi gian h\u1ED3i n\u1ED9i t\u1EA1i l\xE0 1 ph\xFAt."
+  effectData:
+    chillDuration: 5
+    chillSlowMultiplier: 0.3
+    burnDuration: 0
+    totalBurnDamage: 0
+    burnTickPerSec: 0
+    shockDuration: 0
+    shockDamage: 0
+    shockCharge: 0
+  iceDamage: 150
+  whatIsEnemy:
+    serializedVersion: 2
+    m_Bits: 128
+  hpPercentTrigger: 0.5
+  cooldown: 60
+  iceBlastVFX: {fileID: 6946325375250217706, guid: 0053b008d34bc0843979dadfff90ef88, type: 3}
+  onHitVFX: {fileID: 1829016830207108774, guid: 01cf9ba82541900418c1ecd9c1278981, type: 3}

@@ -8,6 +8,7 @@ public class Enemy_DeadState : EnemyState
     }
     public override void Enter()
     {
+        enemy.entitySFX.Dying();
         animator.enabled = false;
         enemy.GetComponent<Collider2D>().enabled = false;
 

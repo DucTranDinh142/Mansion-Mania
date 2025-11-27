@@ -25,6 +25,7 @@ public class Player_DashState : PlayerState
     {
         base.Update();
         player.SetVelocity(player.dashSpeed * dashDirectionValue, 0);
+        player.entitySFX.Dashing();
 
         if (player.wallDetected)
         {

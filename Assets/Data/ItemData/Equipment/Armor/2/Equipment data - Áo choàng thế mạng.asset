@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba87d50c54593fe4fb65c293f05e28dc, type: 3}
+  m_Name: "Equipment data - \xC1o cho\xE0ng th\u1EBF m\u1EA1ng"
+  m_EditorClassIdentifier: 
+  itemPrice: 200
+  minStackSizeAtShop: 1
+  maxStackSizeAtShop: 1
+  itemRarity: 850
+  DropChance: 15.1
+  maxDropChance: 100
+  craftRecipe:
+  - itemData: {fileID: 11400000, guid: 13857d55098067e49a70c56394b2d7b8, type: 2}
+    stackSize: 4
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 3de75ac459cf2cd419e249c0dd8997af, type: 2}
+    stackSize: 3
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 509cd542d9994794c88c461695003a6d, type: 2}
+    stackSize: 3
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 9054b458f4ab5ef4b8a9148411cac623, type: 2}
+    stackSize: 4
+    itemEffect: {fileID: 0}
+  - itemData: {fileID: 11400000, guid: 7b57328544ec73f479044b08f41fb5ec, type: 2}
+    stackSize: 2
+    itemEffect: {fileID: 0}
+  itemName: "\xC1o cho\xE0ng th\u1EBF m\u1EA1ng"
+  itemIcon: {fileID: -8407567668883137275, guid: 2f1370aef4c08594cbfe6427bc4b0aaa, type: 3}
+  inventoryIcon: {fileID: -2027059246, guid: b611d202d1f579f4fb9434d307a2af9a, type: 3}
+  itemType: 2
+  maxStackSize: 1
+  itemEffect: {fileID: 11400000, guid: e6580436326516b40afa621bbc132ca3, type: 2}
+  modifiers:
+  - statType: 4
+    value: 100
+  - statType: 5
+    value: 15

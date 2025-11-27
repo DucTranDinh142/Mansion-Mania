@@ -10,6 +10,10 @@ public class Entity_Stats : MonoBehaviour
     public Stat_OffensiveStat offensiveStat;
     public Stat_MajorStat majorStat;
 
+    protected virtual void Awake()
+    {
+
+    }
     public float GetMaxHP()
     {
         float baseMaxHP = resourceStat.maxHP.GetValue();
@@ -21,23 +25,41 @@ public class Entity_Stats : MonoBehaviour
 
     public float GetPhysicalDamage(out bool isCrit, float scaleFactor = 1)
     {
-        float baseDamage = offensiveStat.damage.GetValue();
-        float bonusDamage = majorStat.strength.GetValue();
-        float totalDamage = baseDamage + bonusDamage;
-
-        float baseCritChance = offensiveStat.critChance.GetValue();
-        float bonusCritChance = majorStat.agility.GetValue() * .3f;
-        float totalCritChance = baseCritChance + bonusCritChance;
+        float totalDamage = GetTotalDamage();
+        float totalCritChance = GetTotalCritChance();
         isCrit = Random.Range(0, 100) < totalCritChance;
 
-        float baseCritPower = offensiveStat.critPower.GetValue();
-        float bonusCritPower = majorStat.strength.GetValue() * .5f;
-        float totalCritPower = (baseCritPower + bonusCritPower) / 100;
+        float totalCritPower = GetTotalCritPower()/100;
 
         float finalCalculatedDamage = isCrit ? totalDamage * totalCritPower : totalDamage;
 
         return finalCalculatedDamage * scaleFactor;
     }
+
+    public float GetTotalCritPower()
+    {
+        float baseCritPower = offensiveStat.critPower.GetValue();
+        float bonusCritPower = majorStat.strength.GetValue() * .5f;
+        float totalCritPower = (baseCritPower + bonusCritPower);
+        return totalCritPower;
+    }
+
+    public float GetTotalCritChance()
+    {
+        float baseCritChance = offensiveStat.critChance.GetValue();
+        float bonusCritChance = majorStat.agility.GetValue() * .3f;
+        float totalCritChance = baseCritChance + bonusCritChance;
+        return totalCritChance;
+    }
+
+    public float GetTotalDamage()
+    {
+        float baseDamage = offensiveStat.damage.GetValue();
+        float bonusDamage = majorStat.strength.GetValue();
+        float totalDamage = baseDamage + bonusDamage;
+        return totalDamage;
+    }
+
     public float GetArmorRedution()
     {
         float finalReduction = offensiveStat.armorReduction.GetValue() / 100;
@@ -46,9 +68,7 @@ public class Entity_Stats : MonoBehaviour
     }
     public float GetArmorMitigation(float armorReduction)
     {
-        float baseArmor = defensiveStat.armor.GetValue();
-        float bonusArmor = majorStat.vitality.GetValue();
-        float totalArmor = baseArmor + bonusArmor;
+        float totalArmor = GetTotalArmor();
 
         float reductionMultiplier = Mathf.Clamp01(1 - armorReduction);
         float effectiveArmor = totalArmor * reductionMultiplier;
@@ -60,6 +80,15 @@ public class Entity_Stats : MonoBehaviour
 
         return finalMitigation;
     }
+
+    public float GetTotalArmor()
+    {
+        float baseArmor = defensiveStat.armor.GetValue();
+        float bonusArmor = majorStat.vitality.GetValue();
+        float totalArmor = baseArmor + bonusArmor;
+        return totalArmor;
+    }
+
     public float GetEvasion()
     {
         float baseEvasionChance = defensiveStat.evasionChance.GetValue();
@@ -120,7 +149,7 @@ public class Entity_Stats : MonoBehaviour
             case ElementType.Fire:
                 baseResistance = defensiveStat.fireResistance.GetValue(); break;
             case ElementType.Lightning:
-                baseResistance = defensiveStat.lightingResistance.GetValue(); break;
+                baseResistance = defensiveStat.lightningResistance.GetValue(); break;
         }
 
         float elementResistance = baseResistance + bonusResistance;
@@ -148,16 +177,16 @@ public class Entity_Stats : MonoBehaviour
             case StatType.ArmorReduction: return offensiveStat.armorReduction;
             case StatType.IceDamage: return offensiveStat.iceDamage;
             case StatType.FireDamage: return offensiveStat.fireDamage;
-            case StatType.LightingDamage: return offensiveStat.lightningDamage;
+            case StatType.LightningDamage: return offensiveStat.lightningDamage;
 
             case StatType.Armor: return defensiveStat.armor;
             case StatType.EvasionChance: return defensiveStat.evasionChance;
             case StatType.FireResistance: return defensiveStat.fireResistance;
             case StatType.IceResistance: return defensiveStat.iceResistance;
-            case StatType.LightingResistance: return defensiveStat.lightingResistance;
+            case StatType.LightningResistance: return defensiveStat.lightningResistance;
 
             default:
-                Debug.LogWarning($"StatType {statType} not implemented yet");
+                //Debug.LogWarning($"StatType {statType} not implemented yet");
                 return null;
 
 
@@ -192,7 +221,7 @@ public class Entity_Stats : MonoBehaviour
 
         defensiveStat.fireResistance.SetBaseValue(defaultStatSetup.fireResistance);
         defensiveStat.iceResistance.SetBaseValue(defaultStatSetup.iceResistance);
-        defensiveStat.lightingResistance.SetBaseValue(defaultStatSetup.lightningResistance);
+        defensiveStat.lightningResistance.SetBaseValue(defaultStatSetup.lightningResistance);
 
     }
 }

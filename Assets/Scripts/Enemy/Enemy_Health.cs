@@ -10,7 +10,7 @@ public class Enemy_Health : Entity_Health
 
         if (base.TakeDamage(damage, elementalDamage, element, damageDealer) == false) return false;
 
-        if (damageDealer.GetComponent<Player>() != null)
+        if (damageDealer?.GetComponent<Player>() != null)
             enemy.TryEnterBattleState(damageDealer);
 
         return true;

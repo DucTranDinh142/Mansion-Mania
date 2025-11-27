@@ -10,7 +10,7 @@ public abstract class PlayerState : EntityState
 
         animator = player.entityAnimator;
         rigidbody = player.entityRigidbody2D;
-        stats = player.entityStats;
+        stats = player.stats;
         input = player.input;
         skillManager = player.skillManager;
     }
@@ -25,6 +25,7 @@ public abstract class PlayerState : EntityState
         }
         if (input.Player.Ultimate.WasPressedThisFrame() && skillManager.ultimate.CanUseSkill())
         {
+            player.entitySFX.Ultimate();
             if (skillManager.ultimate.InstantDomain())
                 skillManager.ultimate.CreateDomain();
             else stateMachine.ChangeState(player.zaWarudoState);
