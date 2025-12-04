@@ -28714,7 +28714,7 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 2124232191001075769}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.42667538}
+  m_AnchorMin: {x: 0, y: 0.7324548}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
@@ -56070,7 +56070,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ch\u1EC9 s\u1ED1 t\u1EA5n c\xF4ng"
+  m_text: "Ch\u1EC9 s\u1ED1 nguy\xEAn t\u1ED1"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2d0730245777e0d47912a770d30495b3, type: 2}
   m_sharedMaterial: {fileID: 3344650405093763147, guid: 2d0730245777e0d47912a770d30495b3, type: 2}
@@ -84448,8 +84448,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 401528692100192396}
   m_HandleRect: {fileID: 3478093973075313235}
   m_Direction: 2
-  m_Value: 1
-  m_Size: 0.5733246
+  m_Value: 1.0000002
+  m_Size: 0.26754525
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -89038,7 +89038,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 7, y: -0.000052318795}
+  m_AnchoredPosition: {x: 7, y: -0.00012207031}
   m_SizeDelta: {x: 0, y: 1580}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &3933664504286938775

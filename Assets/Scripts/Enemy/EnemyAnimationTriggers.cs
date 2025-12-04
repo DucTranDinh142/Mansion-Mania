@@ -11,6 +11,10 @@ public class EnemyAnimationTriggers : EntityAnimationTriggers
         enemy = GetComponentInParent<Enemy>();
         enemyVFX = GetComponentInParent<Enemy_VFX>();
     }
+    private void SpecialAttackTrigger()
+    {
+        enemy.SpecialAttack();
+    }
     private void EnableCounterWindow()
     {
         enemyVFX.EnableAttackAlert(true);

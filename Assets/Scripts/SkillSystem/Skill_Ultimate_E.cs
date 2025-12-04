@@ -56,7 +56,7 @@ public class Skill_Ultimate_E : Skill_Base
     }
     private Transform FindTargetInDomain()
     {
-        trappedTargets.RemoveAll(target => target == null || target.health.isDead);
+        trappedTargets.RemoveAll(target => target == null || target.entityHealth.isDead);
 
         if(trappedTargets.Count ==0) return null;
 

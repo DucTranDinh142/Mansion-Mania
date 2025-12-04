@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: f7cf952e3778cce4fbd5ea1a38cc00b2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4647135234780692104
+    second: KING_SpellCast_0
+  - first:
+      213: -7813009067518510125
+    second: KING_SpellCast_1
+  - first:
+      213: -4944712427550195081
+    second: KING_SpellCast_2
+  - first:
+      213: -6960210700566862274
+    second: KING_SpellCast_3
+  - first:
+      213: 5645351499489175405
+    second: KING_SpellCast_4
+  - first:
+      213: 6688900775593777940
+    second: KING_SpellCast_5
+  - first:
+      213: -1147431915499340317
+    second: KING_SpellCast_6
+  - first:
+      213: 854222275291002806
+    second: KING_SpellCast_7
+  - first:
+      213: -3599340528729864295
+    second: KING_SpellCast_8
+  - first:
+      213: 2175426106172942611
+    second: KING_SpellCast_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 29
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KING_SpellCast_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 55
+        height: 69
+      alignment: 9
+      pivot: {x: 0.43636364, y: 0.014492754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88efd4cdfd0fd7040800000000000000
+      internalID: 4647135234780692104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KING_SpellCast_1
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 4
+        width: 55
+        height: 69
+      alignment: 9
+      pivot: {x: 0.43636364, y: 0.014492754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3db37afe5ad929390800000000000000
+      internalID: -7813009067518510125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KING_SpellCast_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 6
+        width: 55
+        height: 67
+      alignment: 9
+      pivot: {x: 0.43636364, y: 0.014925373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 772496fce3ad06bb0800000000000000
+      internalID: -4944712427550195081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KING_SpellCast_3
+      rect:
+        serializedVersion: 2
+        x: 189
+        y: 6
+        width: 55
+        height: 67
+      alignment: 9
+      pivot: {x: 0.43636364, y: 0.014925373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36e6de9e3d586f90800000000000000
+      internalID: -6960210700566862274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KING_SpellCast_4
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 4
+        width: 55
+        height: 69
+      alignment: 9
+      pivot: {x: 0.45454544, y: 0.014492754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6765474741585e40800000000000000
+      internalID: 5645351499489175405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KING_SpellCast_5
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 2
+        width: 56
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5178572, y: 0.014084507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41b1a1be0dfb3dc50800000000000000
+      internalID: 6688900775593777940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KING_SpellCast_6
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 2
+        width: 59
+        height: 71
+      alignment: 9
+      pivot: {x: 0.4915254, y: 0.014084507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ed37b090c08310f0800000000000000
+      internalID: -1147431915499340317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KING_SpellCast_7
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 2
+        width: 59
+        height: 71
+      alignment: 9
+      pivot: {x: 0.4915254, y: 0.014084507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b732fd22aecadb00800000000000000
+      internalID: 854222275291002806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KING_SpellCast_8
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 1
+        width: 55
+        height: 72
+      alignment: 9
+      pivot: {x: 0.5272727, y: 0.027777778}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 997c367fbd29c0ec0800000000000000
+      internalID: -3599340528729864295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KING_SpellCast_9
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 2
+        width: 55
+        height: 71
+      alignment: 9
+      pivot: {x: 0.5272727, y: 0.014084507}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319ac85848aa03e10800000000000000
+      internalID: 2175426106172942611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: c7a54db86ddd3d740addee1166a23b0b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      KING_SpellCast_0: 4647135234780692104
+      KING_SpellCast_1: -7813009067518510125
+      KING_SpellCast_2: -4944712427550195081
+      KING_SpellCast_3: -6960210700566862274
+      KING_SpellCast_4: 5645351499489175405
+      KING_SpellCast_5: 6688900775593777940
+      KING_SpellCast_6: -1147431915499340317
+      KING_SpellCast_7: 854222275291002806
+      KING_SpellCast_8: -3599340528729864295
+      KING_SpellCast_9: 2175426106172942611
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

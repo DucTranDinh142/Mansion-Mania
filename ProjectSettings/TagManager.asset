@@ -16,8 +16,8 @@ TagManager:
   - Player
   - PlayerInteractable
   - SkiilObjectSword
-  - 
-  - 
+  - Untargetable
+  - Untouchable
   - 
   - 
   - 

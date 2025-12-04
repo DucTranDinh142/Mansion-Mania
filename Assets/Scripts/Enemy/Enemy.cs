@@ -4,8 +4,9 @@ using UnityEngine;
 public class Enemy : Entity
 {
     public Entity_Stats entityStats { get; private set; }
+    public Entity_Combat entityCombat { get; private set; }
 
-    public Enemy_Health health { get; private set; }
+    public Enemy_Health entityHealth { get; private set; }
     public Enemy_IdleState idleState;
     public Enemy_MoveState moveState;
     public Enemy_AttackState attackState;
@@ -51,7 +52,8 @@ public class Enemy : Entity
     protected override void Awake()
     {
         base.Awake();
-        health = GetComponent<Enemy_Health>();
+        entityHealth = GetComponent<Enemy_Health>();
+        entityCombat = GetComponent<Entity_Combat>();
         entityStats = GetComponent<Entity_Stats>();
 
     }
@@ -71,7 +73,10 @@ public class Enemy : Entity
         base.StopSlowDown();
 
     }
+    public virtual void SpecialAttack()
+    {
 
+    }
     public void EnableCounterWindow(bool enable) => canBeStunned = enable; 
     public override void EntityDeath()
     {
@@ -86,7 +91,7 @@ public class Enemy : Entity
     {
         stateMachine.ChangeState(idleState);
     }
-    public void TryEnterBattleState(Transform player)
+    public virtual void TryEnterBattleState(Transform player)
     {
         if (stateMachine.currentState == battleState || stateMachine.currentState == attackState) return;
 

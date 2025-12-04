@@ -75,7 +75,6 @@ public class Skill_SwordThrow_D : Skill_Base
         if (currentSword != null)
         {
             currentSword.GetSwordBackToPlayer();
-            SetSkillOnCoolDown();
             return false;
         }
 

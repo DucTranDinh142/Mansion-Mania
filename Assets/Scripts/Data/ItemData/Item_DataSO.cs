@@ -1,10 +1,9 @@
-using UnityEditor;
 using UnityEngine;
 
-[CreateAssetMenu (menuName = "RPG Setup/Item Data/Material item", fileName = "Material data - ")]
+[CreateAssetMenu(menuName = "RPG Setup/Item Data/Material item", fileName = "Material data - ")]
 public class Item_DataSO : ScriptableObject
 {
-    public string saveID {  get; private set; }
+    public string saveID { get; private set; }
 
     [Header("Merchant Details")]
     public int itemPrice = 100;
@@ -12,12 +11,9 @@ public class Item_DataSO : ScriptableObject
     public int maxStackSizeAtShop = 1;
 
     [Header("Drop Details")]
-    [Range(0, 1000)]
-    public int itemRarity = 100;
-    [Range(0, 100)]
-    public float DropChance;
-    [Range(0, 100)]
-    public float maxDropChance = 65f;
+    [Range(0, 1000)] public int itemRarity = 100;
+    [Range(0, 100)] public float DropChance;
+    [Range(0, 100)] public float maxDropChance = 65f;
 
     [Header("Craft Details")]
     public Inventory_Item[] craftRecipe;
@@ -32,21 +28,20 @@ public class Item_DataSO : ScriptableObject
     [Header("Item Effect")]
     public ItemEffectDataSO itemEffect;
 
+#if UNITY_EDITOR
     private void OnValidate()
     {
         DropChance = GetDropChance();
 
-
-#if UNITY_EDITOR
-        string path = AssetDatabase.GetAssetPath(this);
-        saveID = AssetDatabase.AssetPathToGUID(path);
-#endif
+        string path = UnityEditor.AssetDatabase.GetAssetPath(this);
+        saveID = UnityEditor.AssetDatabase.AssetPathToGUID(path);
     }
+#endif
 
     public float GetDropChance()
     {
         float maxRarity = 1000;
-        float chance = (maxRarity - itemRarity + 1)/ maxRarity *100;
+        float chance = (maxRarity - itemRarity + 1) / maxRarity * 100;
 
         return Mathf.Min(chance, maxDropChance);
     }

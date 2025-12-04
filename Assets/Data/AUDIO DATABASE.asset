@@ -75,7 +75,7 @@ MonoBehaviour:
     clips:
     - {fileID: 8300000, guid: 21780dd4698638546879c1d681a70ad6, type: 3}
     maxVolume: 1
-  - audioName: c
+  - audioName: enemy_move
     clips:
     - {fileID: 8300000, guid: b8a86f4bd5751d448a63b582dc4a0d9b, type: 3}
     - {fileID: 8300000, guid: 5f71b339c688e654fb09def9081b1e87, type: 3}
@@ -100,6 +100,10 @@ MonoBehaviour:
     - {fileID: 8300000, guid: db30f9f6dafb6a14dac6528b20b2408f, type: 3}
     maxVolume: 1
   - audioName: Level_3
+    clips:
+    - {fileID: 8300000, guid: 342b07aa6631ee24fbe91a88824f1037, type: 3}
+    maxVolume: 0.8
+  - audioName: Level_3_Battle
     clips:
     - {fileID: 8300000, guid: 8fb1d1bc2f389b74b8f83335bc09f0e1, type: 3}
     maxVolume: 0.8

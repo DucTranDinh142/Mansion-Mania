@@ -21,6 +21,7 @@ public class UI : MonoBehaviour
     public UI_InGame inGameUI { get; private set; }
     public UI_Options optionsUI { get; private set; }
     public UI_Death deathUI { get; private set; }
+    public UI_Win winUI { get; private set; }
     public UI_FadeScreen fadeScreenUI { get; private set; }
 
     #endregion
@@ -43,6 +44,7 @@ public class UI : MonoBehaviour
         inGameUI = GetComponentInChildren<UI_InGame>(true);
         optionsUI = GetComponentInChildren<UI_Options>(true);
         deathUI = GetComponentInChildren<UI_Death>(true);
+        winUI = GetComponentInChildren<UI_Win>(true);
         fadeScreenUI = GetComponentInChildren<UI_FadeScreen>(true);
 
         skillTreeEnabled = skillTreeUI.gameObject.activeSelf;
@@ -79,6 +81,12 @@ public class UI : MonoBehaviour
     public void OpenDeathUI()
     {
         SwitchTo(deathUI.gameObject);
+        HideAllToolTips();
+        input.Disable();
+    }
+    public void OpenWinUI()
+    {
+        SwitchTo(winUI.gameObject);
         HideAllToolTips();
         input.Disable();
     }

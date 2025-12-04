@@ -93186,6 +93186,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8161456086804849173, guid: a0e5f84a7c54d3b45b077b67b7f3655b, type: 3}
+      propertyPath: itemDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: 0b8e244fad52b054392ea0c91e97b660, type: 2}
     - target: {fileID: 8356463053806699377, guid: a0e5f84a7c54d3b45b077b67b7f3655b, type: 3}
       propertyPath: m_Name
       value: Object_Smith_NPC

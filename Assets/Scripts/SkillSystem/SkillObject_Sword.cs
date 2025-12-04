@@ -41,8 +41,11 @@ public class SkillObject_Sword : SkillObject_Base
 
         transform.position = Vector2.MoveTowards(transform.position, playerTransform.position, comebackSpeed*Time.deltaTime);
 
-        if(distance < .5f )
+        if(distance < .5f)
+        {
             Destroy(gameObject);
+            swordManager.SetSkillOnCoolDown();
+        }
     }
     protected virtual void OnTriggerEnter2D(Collider2D collision)
     {
@@ -54,7 +57,10 @@ public class SkillObject_Sword : SkillObject_Base
     protected void CheckEnableCollision(Collider2D collision)
     {
         if (collision.GetComponent<Collider2D>().enabled == false)
+        {
+            this.transform.parent = null;
             GetSwordBackToPlayer();
+        }
     }
 
     protected void StopSword(Collider2D collision)

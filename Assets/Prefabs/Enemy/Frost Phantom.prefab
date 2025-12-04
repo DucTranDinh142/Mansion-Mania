@@ -1342,7 +1342,7 @@ MonoBehaviour:
       modifiers: []
   offensiveStat:
     damage:
-      baseValue: 0
+      baseValue: 4
       modifiers: []
     attackSpeed:
       baseValue: 1

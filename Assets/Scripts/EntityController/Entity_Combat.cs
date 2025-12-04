@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting.Antlr3.Runtime.Misc;
 using UnityEngine;
 
 public class Entity_Combat : MonoBehaviour
@@ -52,7 +53,50 @@ public class Entity_Combat : MonoBehaviour
         }
         if(targetGotHit == false) entitySFX?.AttackMiss();
     }
-    
+    public void PerformAttackOnTarget(Transform target, ScaleData damageScaleData = null)
+    {
+        bool targetGotHit = false;
+
+
+        IDamagable damageable = target.GetComponent<IDamagable>();
+
+        if (damageable == null)
+            return; // skip target, go to next target
+
+        ScaleData damageScale = damageScaleData == null ? basicAttackScale : damageScaleData;
+        Entity_StatusHandler statusHandler = target.GetComponent<Entity_StatusHandler>();
+
+
+        float elementalDamage = entityStats.GetElementalDamage(out ElementType element, basicAttackScale.elemental);
+        float damage = entityStats.GetPhysicalDamage(out bool isCrit, basicAttackScale.physical);
+        ElementalEffectData effectData = new ElementalEffectData(entityStats, basicAttackScale);
+
+        targetGotHit = damageable.TakeDamage(damage, elementalDamage, element, transform);
+
+        float ran = UnityEngine.Random.Range(0, 3);
+        switch (ran)
+        {
+            case 0: element = ElementType.None; break;
+            case 1: element = ElementType.Ice; break;
+            case 2: element = ElementType.Fire; break;
+            case 3: element = ElementType.Lightning; break;
+        }
+
+        if (element != ElementType.None)
+            statusHandler?.ApplyStatusEffect(element, effectData);
+
+        if (targetGotHit)
+        {
+            OnDoingPhysicalDamage?.Invoke(damage);
+            entityVFX?.CreateOnHitVFX(target.transform, isCrit, element);
+            entitySFX?.AttackHit();
+        }
+
+
+        if (targetGotHit == false)
+            entitySFX?.AttackMiss();
+    }
+
     protected Collider2D[] GetDetectedColliders()
     {
         return Physics2D.OverlapCircleAll(targetCheckTransform.position, targetCheckRadius, whatIsTarget);

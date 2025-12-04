@@ -10,6 +10,7 @@ public class Entity : MonoBehaviour
 
     public Animator entityAnimator { get; private set; }
     public Rigidbody2D entityRigidbody2D { get; private set; }
+    public Collider2D entityCollider2D { get; private set; }
     public Entity_SFX entitySFX { get; private set; }
     protected StateMachine stateMachine;
 
@@ -35,6 +36,7 @@ public class Entity : MonoBehaviour
         entityAnimator = GetComponentInChildren<Animator>();
         entityRigidbody2D = GetComponent<Rigidbody2D>();
         entitySFX = GetComponent<Entity_SFX>();
+        entityCollider2D = GetComponent<Collider2D>();
 
         stateMachine = new StateMachine();
     }

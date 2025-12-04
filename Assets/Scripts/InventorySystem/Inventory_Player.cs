@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -96,31 +96,50 @@ public class Inventory_Player : Inventory_Base
     {
         data.gold = gold;
         data.PercentHP = player.health.GetHPPercent();
+
         data.inventory.Clear();
         data.equipedItems.Clear();
 
         foreach (var item in itemList)
         {
-            if (item != null && item.itemData != null)
+            if (item == null || item.itemData == null)
+                continue;
+
+            string saveId = item.itemData.saveID;
+
+            if (string.IsNullOrEmpty(saveId))
             {
-                string saveId = item.itemData.saveID;
-
-                if (data.inventory.ContainsKey(saveId) == false)
-                    data.inventory[saveId] = 0;
-
-                data.inventory[saveId] += item.stackSize;
+                Debug.LogError("Item has no saveID!");
+                continue;
             }
+
+            if (data.inventory.ContainsKey(saveId) == false)
+                data.inventory[saveId] = 0;
+
+            data.inventory[saveId] += item.stackSize;
         }
+
         foreach (var slot in equipList)
         {
-            if (slot.HasItem())
-                data.equipedItems[slot.equipedItem.itemData.saveID] = slot.slotType;
+            if (slot.HasItem() == false || slot.equipedItem.itemData == null)
+                continue;
+
+            string saveId = slot.equipedItem.itemData.saveID;
+            data.equipedItems[saveId] = slot.slotType;
         }
     }
+
 
     public override void LoadData(GameData data)
     {
         gold = data.gold;
+
+        // Xóa dữ liệu cũ trước khi load
+        itemList.Clear();
+        foreach (var slot in equipList)
+            slot.equipedItem = null;
+
+        // ------- LOAD INVENTORY -------
         foreach (var entry in data.inventory)
         {
             string saveID = entry.Key;
@@ -130,7 +149,7 @@ public class Inventory_Player : Inventory_Base
 
             if (itemData == null)
             {
-                Debug.LogWarning("Item not found");
+                Debug.LogWarning("Item not found: " + saveID);
                 continue;
             }
 
@@ -141,25 +160,45 @@ public class Inventory_Player : Inventory_Base
             }
         }
 
+        // ------- LOAD EQUIPPED ITEMS -------
         foreach (var entry in data.equipedItems)
         {
             string saveId = entry.Key;
             ItemType loadedSlotType = entry.Value;
 
             Item_DataSO itemData = itemDatabase.GetItemData(saveId);
-            Inventory_Item itemToLoad = new Inventory_Item(itemData);
 
+            if (itemData == null)
+            {
+                Debug.LogWarning("Equipped item not found: " + saveId);
+                continue;
+            }
+
+            // lấy slot tương ứng
             var slot = equipList.Find(slot =>
                 slot.slotType == loadedSlotType &&
                 slot.HasItem() == false);
 
+            if (slot == null)
+            {
+                Debug.LogError("No matching equip slot found for: " + saveId);
+                continue;
+            }
+
+            Inventory_Item itemToLoad = new Inventory_Item(itemData);
             slot.equipedItem = itemToLoad;
+
             slot.equipedItem.AddModifiers(player.stats);
             slot.equipedItem.AddItemEffect(player);
         }
+
+        // HP
         if (data.PercentHP <= 0)
             player.health.SetHPtoPercent(1);
-        else player.health.SetHPtoPercent(data.PercentHP);
+        else
+            player.health.SetHPtoPercent(data.PercentHP);
+
         TriggerUpdateUI();
     }
+
 }
